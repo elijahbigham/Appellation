@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController{
+    
     let treeViewScript: treeViewController = treeViewController()
+    
     @IBOutlet weak var chooseACategory: UILabel!
+    
     var choice = -1
     //CS = 0, VG = 1, EM = 2, M = 3, S = 4, TTH = 5, P = 6
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

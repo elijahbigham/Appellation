@@ -22,17 +22,35 @@ class treeViewController: UIViewController {
     //This array is set to equal one of the above arrays and then answer is taken from this
     var chosenCategory : [String] = []
     
-    @IBOutlet weak var UI_Label: UILabel!
+    //This is the label that displays the underscores and answers.
+    @IBOutlet weak var textLabel: UILabel!
     
     var answer = "HELLO WORLD"
-    var labelText = "This text will be replaced with answer"
+    //vv This is what appears on the screen
+    var labelText = ""
     var letterInWord = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //answer = ChooseAnswer(category : num)
-        labelText = answer
+        
+        //This replaces all characters in the answer with "_ " and all spaces with a "  "
+        for i in 0..<answer.count{
+            
+            let currentLetterIndex = answer.index(answer.startIndex, offsetBy: i)
+            let currentLetter = answer[currentLetterIndex]
+            
+            if(currentLetter != " "){
+                labelText += "_ "
+            } else {
+                labelText += "  "
+            }
+        }
+        
+        //Initializes the label to underscores
+        textLabel.text = labelText
+        
     }
     //Assigns answer variable to a random word from the chosen category
     public func ChooseAnswer(category : Int) -> String{
