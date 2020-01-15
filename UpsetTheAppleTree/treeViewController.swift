@@ -35,7 +35,7 @@ class treeViewController: UIViewController {
         labelText = answer
     }
     //Assigns answer variable to a random word from the chosen category
-    func ChooseAnswer(category : Int) -> String{
+    public func ChooseAnswer(category : Int) -> String{
         
         switch category{
         case 1:
