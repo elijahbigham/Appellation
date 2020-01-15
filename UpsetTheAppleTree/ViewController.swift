@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     var choice = -1
     //Indictates which option the user has selected
-    //Animal = 0, Food = 1, Sports = 2, Celestial Bodies = 3
+    //Animal = 0, Food = 1, Sports = 2, Celestial Bodies = 3, Random = 4
     @IBOutlet weak var chooseAButton: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,9 @@ class ViewController: UIViewController {
     }
     @IBAction func CelestialBodiesButton(_ sender: Any) {
         choice = 3
+    }
+    @IBAction func RandomButton(_ sender: Any) {
+        choice = 4
     }
 }
 
