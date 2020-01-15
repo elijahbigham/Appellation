@@ -38,22 +38,22 @@ class treeViewController: UIViewController {
     public func ChooseAnswer(category : Int) -> String{
         
         switch category{
-        case 1:
+        case 0:
             chosenCategory = COMPSCI
-        case 2:
+        case 1:
             chosenCategory = VIDEOGAMES
-        case 3:
+        case 2:
             chosenCategory = ELONMUSK
-        case 4:
+        case 3:
             chosenCategory = MEMES
-        case 5:
+        case 4:
             chosenCategory = SPORTS
-        case 6:
+        case 5:
             chosenCategory = THINGSTHATHURT
-        case 7:
+        case 6:
             chosenCategory = POKEMON
         default:
-            answer = "RANDOM WORD"
+            answer = "HELLO WORLD"
         }
         
         //Random number to select answer from array
