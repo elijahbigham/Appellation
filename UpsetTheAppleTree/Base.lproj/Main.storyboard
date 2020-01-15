@@ -36,7 +36,8 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="AnimalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vhn-mG-sEb"/>
+                                    <action selector="CSButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S9x-TG-yJe"/>
+                                    <segue destination="wHl-za-U7f" kind="show" id="Gq4-jy-znA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjF-Pp-Tgl">
@@ -49,7 +50,8 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="FoodButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hyd-5V-Q4C"/>
+                                    <action selector="VGButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3sN-95-g7I"/>
+                                    <segue destination="wHl-za-U7f" kind="show" id="7SY-bX-qUS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqm-UL-ubg">
@@ -62,7 +64,8 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="SportsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e6n-yv-2Qe"/>
+                                    <action selector="EMButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SpZ-s9-aYK"/>
+                                    <segue destination="wHl-za-U7f" kind="show" id="ZER-TN-iC5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbe-aR-wjW">
@@ -75,7 +78,8 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="CelestialBodiesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yO7-T1-224"/>
+                                    <action selector="MButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1F-xN-wM6"/>
+                                    <segue destination="wHl-za-U7f" kind="show" id="2wL-d3-wV3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDI-6e-dhH">
@@ -88,36 +92,8 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="RandomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lm5-dQ-i6H"/>
-                                    <action selector="SportsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qaq-tr-kqj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aP-CE-sN8">
-                                <rect key="frame" x="166" y="946" width="292" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="47"/>
-                                <size key="titleShadowOffset" width="1" height="2"/>
-                                <state key="normal" title="Pokemon">
-                                    <color key="titleColor" red="0.94106217619999999" green="0.14476494719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="RandomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2wf-Ch-3hg"/>
-                                    <action selector="SportsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ssL-S8-9Eg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CL3-ya-Bl8">
-                                <rect key="frame" x="567" y="944" width="292" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="47"/>
-                                <size key="titleShadowOffset" width="1" height="2"/>
-                                <state key="normal" title="Random">
-                                    <color key="titleColor" red="0.94106217619999999" green="0.14476494719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="RandomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egq-So-2F1"/>
-                                    <action selector="SportsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7tx-xO-XZQ"/>
+                                    <action selector="TTHButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96m-5N-Sby"/>
+                                    <segue destination="wHl-za-U7f" kind="show" id="DNU-Ek-u7C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNg-2b-W54">
@@ -130,8 +106,22 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="RandomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RWW-Ji-5Px"/>
-                                    <action selector="SportsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxc-tL-Wcy"/>
+                                    <action selector="SButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zEp-bA-5uv"/>
+                                    <segue destination="wHl-za-U7f" kind="show" id="fTg-Cq-Tjb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aP-CE-sN8">
+                                <rect key="frame" x="366" y="948" width="292" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="47"/>
+                                <size key="titleShadowOffset" width="1" height="2"/>
+                                <state key="normal" title="Pokemon">
+                                    <color key="titleColor" red="0.94106217619999999" green="0.14476494719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3D-8N-gGD"/>
+                                    <segue destination="wHl-za-U7f" kind="show" id="Ady-vJ-JZl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -139,7 +129,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="chooseAButton" destination="qt0-ra-UiI" id="759-8T-9dt"/>
+                        <outlet property="chooseACategory" destination="qt0-ra-UiI" id="vu3-2m-TRc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -168,7 +158,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXx-Lh-gf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86" y="705"/>
+            <point key="canvasLocation" x="897" y="116"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7SY-bX-qUS"/>
+    </inferredMetricsTieBreakers>
 </document>
