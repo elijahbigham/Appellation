@@ -27,7 +27,7 @@ class ViewController: UIViewController{
     var answer = "HELLO WORLD"
     var labelText = "This text will be replaced with answer"
     var letterInWord = false
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
