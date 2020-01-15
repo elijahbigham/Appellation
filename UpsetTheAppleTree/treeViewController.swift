@@ -35,7 +35,7 @@ class treeViewController: UIViewController {
         labelText = answer
     }
     //Assigns answer variable to a random word from the chosen category
-    func ChooseAnswer(category : Int) -> String{
+    public func ChooseAnswer(category : Int) -> String{
         
         switch category{
         case 1:
@@ -64,7 +64,7 @@ class treeViewController: UIViewController {
     
     //Called on each button click. Makes shit happen.
     func Update(targetLetter : Character){
-        for i in 0...(answer.count - 1){
+        for i in 0..<answer.count{
             
             //This is for finding if the letter occurs in the string
             let currentLetterIndex = answer.index(answer.startIndex, offsetBy: i)
@@ -79,6 +79,7 @@ class treeViewController: UIViewController {
         if(letterInWord){
             //Make letter appear
             print("Letter is in word")
+            addLetters(letter: targetLetter)
             letterInWord = false
         } else {
             //Make apple dissappear
@@ -86,6 +87,19 @@ class treeViewController: UIViewController {
         }
     }
     
+    func addLetters(letter : Character){
+        for i in 0..<answer.count{
+            
+            //This is for inserting the letter in the label.
+            let currentLetterIndex = answer.index(answer.startIndex, offsetBy: i)
+            let currentLetter = answer[currentLetterIndex]
+            print(currentLetter)
+            
+            if (letter == currentLetter){
+                letterInWord = true
+            }
+        }
+    }
     
     @IBAction func E_Button(_ sender: Any) {
         Update(targetLetter: "E")
