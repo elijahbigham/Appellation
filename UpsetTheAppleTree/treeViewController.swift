@@ -10,9 +10,7 @@ import UIKit
 
 class treeViewController: UIViewController {
 
-    //let treeView = UIStoryboard(name: "treeViewController", bundle: nil)
-    //let treeViewController = treeView.instantiateViewController(withIdentifier: "treeViewController")
-    //self.present(controller, animated: true, completion: nil)
+    let viewControl: ViewController = ViewController()
     
     //Categories
     let COMPSCI : [String] = ["VARIABLE", "INTEGER", "DOUBLE", "METHOD", "STACK OVERFLOW", "BOOLEAN", "BUSZA", "INSTANTIATION", "INTERFACE", "SUBCLASS", "CLASS", "SUPERCLASS"]
@@ -26,6 +24,8 @@ class treeViewController: UIViewController {
     //This array is set to equal one of the above arrays and then answer is taken from this
     var chosenCategory : [String] = ["Hello World"]
     
+    public var catNumber = 10
+    
     //This is the label that displays the underscores and answers.
     @IBOutlet weak var textLabel: UILabel!
     
@@ -37,6 +37,12 @@ class treeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Random number to select answer from array
+        let rand = Int.random(in: 0 ..< chosenCategory.count)
+        
+        answer = chosenCategory[rand]
+        print(answer)
+        makeUnderscores()
     }
     //Assigns answer variable to a random word from the chosen category
     public func ChooseAnswer(category : Int){
@@ -59,13 +65,6 @@ class treeViewController: UIViewController {
         default:
             print("Something Broke")
         }
-        
-        //Random number to select answer from array
-        let rand = Int.random(in: 0 ..< chosenCategory.count)
-        
-        answer = chosenCategory[rand]
-        print(answer)
-        makeUnderscores()
     }
     
     func makeUnderscores(){
