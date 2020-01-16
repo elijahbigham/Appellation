@@ -72,6 +72,10 @@ class treeViewController: UIViewController {
     //This is the correct answer
     var answer = "HELLO WORLD"
     
+    //These are what keeps track if you win or lose
+    var charactersGotten = 0
+    var applesLeft = 7
+    
     //This is what appears on the screen
     var labelText = ""
     var letterInWord = false
@@ -108,10 +112,10 @@ class treeViewController: UIViewController {
         let rand = Int.random(in: 0 ..< chosenCategory.count)
         answer = chosenCategory[rand]
         print(answer)
-        makeUnderscores()
+        MakeUnderscores()
     }
     
-    func makeUnderscores(){
+    func MakeUnderscores(){
         //This replaces all characters in the answer with "_ " and all spaces with a "  "
         for i in 0..<answer.count{
             
@@ -144,21 +148,24 @@ class treeViewController: UIViewController {
             }
         }
         
+        //If the letter does occur in the string
         if(letterInWord){
-            //Make letter appear
-            print("Letter is in word")
-            addLetters(letter: pressedLetter)
-            
-            //Resets letter in word for the next choice
+            //Make letters appear
+            AddLetters(letter: pressedLetter)
+            //Resets boolean for the next choice
             letterInWord = false
         } else {
             //Make apple dissappear
-            print("Lose an apple")
+            LoseApples()
         }
+        
+        //For debugging
+        print(answer.count)
+        print(charactersGotten)
     }
     
     //This function is the most complicated thing I have coded so far in my life
-    func addLetters(letter : Character){
+    func AddLetters(letter : Character){
         for i in 0..<answer.count{
             
             //This is for inserting the letter in the label.
@@ -183,6 +190,9 @@ class treeViewController: UIViewController {
                         newLabelText += String(nestedCurrentLetter)
                     } else {
                         newLabelText += String(letter)
+                        
+                        //We need this to check if we win the game
+                        charactersGotten += 1
                     }
                 }
                 //This is where it sets labelText to the finished newLabelText
@@ -190,8 +200,44 @@ class treeViewController: UIViewController {
                 //And then sets the text to the UI_Label to labelText
                 textLabel.text = labelText
                 
+                //THIS IS WHERE YOU WIN THE GAME
+                if(charactersGotten == answer.count){
+                    print("YOU WIN!!!")
+                }
+                
                 //HOLY SHIT IT ACTUALLY WORKS!!!!!
             }
+        }
+    }
+    
+    func LoseApples(){
+        applesLeft -= 1
+        
+        switch applesLeft{
+        case 6:
+            print("6 apples left")
+            apple1.isHidden = true
+        case 5:
+            print("5 apples left")
+            apple2.isHidden = true
+        case 4:
+            print("4 apples left")
+            apple3.isHidden = true
+        case 3:
+            print("3 apples left")
+            apple4.isHidden = true
+        case 2:
+            print("2 apples left")
+            apple5.isHidden = true
+        case 1:
+            print("1 apples left")
+            apple6.isHidden = true
+        case 0:
+            //THIS IS WHERE YOU LOSE THE GAME
+            print("You Lose!")
+            apple7.isHidden = true
+        default:
+            print("Dems wierd apples")
         }
     }
     
