@@ -9,7 +9,8 @@
 import UIKit
 
 class treeViewController: UIViewController {
-
+    
+    
     let viewControl: ViewController = ViewController()
     
     //Categories
@@ -24,7 +25,7 @@ class treeViewController: UIViewController {
     //This array is set to equal one of the above arrays and then answer is taken from this
     var chosenCategory : [String] = ["Hello World"]
     
-    public var catNumber = 10
+    public var choice = -1
     
     //This is the label that displays the underscores and answers.
     @IBOutlet weak var textLabel: UILabel!
@@ -36,13 +37,7 @@ class treeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Random number to select answer from array
-        let rand = Int.random(in: 0 ..< chosenCategory.count)
-        
-        answer = chosenCategory[rand]
-        print(answer)
-        makeUnderscores()
+        ChooseAnswer(category: viewControl.getChoice())
     }
     //Assigns answer variable to a random word from the chosen category
     public func ChooseAnswer(category : Int){
@@ -65,6 +60,12 @@ class treeViewController: UIViewController {
         default:
             print("Something Broke")
         }
+        
+        //Chooses the answer from array
+        let rand = Int.random(in: 0 ..< chosenCategory.count)
+        answer = chosenCategory[rand]
+        print(answer)
+        makeUnderscores()
     }
     
     func makeUnderscores(){
