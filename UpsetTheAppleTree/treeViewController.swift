@@ -10,6 +10,10 @@ import UIKit
 
 class treeViewController: UIViewController {
 
+    //let treeView = UIStoryboard(name: "treeViewController", bundle: nil)
+    //let treeViewController = treeView.instantiateViewController(withIdentifier: "treeViewController")
+    //self.present(controller, animated: true, completion: nil)
+    
     //Categories
     let COMPSCI : [String] = ["VARIABLE", "INTEGER", "DOUBLE", "METHOD", "STACK OVERFLOW", "BOOLEAN", "BUSZA", "INSTANTIATION", "INTERFACE", "SUBCLASS", "CLASS", "SUPERCLASS"]
     let VIDEOGAMES : [String] = ["TENNIS FOR TWO", "UNDERTALE", "THE WITCHER", "ROCKET LEAGUE", "SUPER SMASH BROS", "FLAPPY BIRD", "JETPACK JOYRIDE", "CALL OF DUTY", "BEAT SABER", "GEOMETRY DASH"]
@@ -20,7 +24,7 @@ class treeViewController: UIViewController {
     let POKEMON : [String] = ["PIKACHU", "BULBASAUR", "CHARMANDER", "SQUIRTLE", "CHARIZARD", "ARTICUNO", "ARCEUS", "RAYQUAZA", "PIDGEY", "BIDOOF", "EKANS", "NIDORAN", "GHASTLY"]
     
     //This array is set to equal one of the above arrays and then answer is taken from this
-    var chosenCategory : [String] = []
+    var chosenCategory : [String] = ["Hello World"]
     
     //This is the label that displays the underscores and answers.
     @IBOutlet weak var textLabel: UILabel!
@@ -33,27 +37,9 @@ class treeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //answer = ChooseAnswer(category : num)
-        
-        //This replaces all characters in the answer with "_ " and all spaces with a "  "
-        for i in 0..<answer.count{
-            
-            let currentLetterIndex = answer.index(answer.startIndex, offsetBy: i)
-            let currentLetter = answer[currentLetterIndex]
-            
-            if(currentLetter != " "){
-                labelText += "_ "
-            } else {
-                labelText += "  "
-            }
-        }
-        
-        //Initializes the label to underscores
-        textLabel.text = labelText
-        
     }
     //Assigns answer variable to a random word from the chosen category
-    public func ChooseAnswer(category : Int) -> String{
+    public func ChooseAnswer(category : Int){
         
         switch category{
         case 0:
@@ -71,13 +57,34 @@ class treeViewController: UIViewController {
         case 6:
             chosenCategory = POKEMON
         default:
-            answer = "HELLO WORLD"
+            print("Something Broke")
         }
         
         //Random number to select answer from array
         let rand = Int.random(in: 0 ..< chosenCategory.count)
         
-        return chosenCategory[rand]
+        answer = chosenCategory[rand]
+        print(answer)
+        makeUnderscores()
+    }
+    
+    func makeUnderscores(){
+        //This replaces all characters in the answer with "_ " and all spaces with a "  "
+        for i in 0..<answer.count{
+            
+            let currentLetterIndex = answer.index(answer.startIndex, offsetBy: i)
+            let currentLetter = answer[currentLetterIndex]
+            
+            if(currentLetter != " "){
+                labelText += "_ "
+            } else {
+                labelText += "  "
+            }
+        }
+        
+        //Initializes the label to underscores
+        print(labelText)
+        textLabel.text = labelText
     }
     
     //Called on each button click. Makes shit happen.
