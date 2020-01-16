@@ -30,8 +30,19 @@ class treeViewController: UIViewController {
     //This is the label that displays the underscores and answers.
     @IBOutlet weak var textLabel: UILabel!
     
+    //Apples
+    @IBOutlet weak var apple1: UIImageView!
+    @IBOutlet weak var apple2: UIImageView!
+    @IBOutlet weak var apple3: UIImageView!
+    @IBOutlet weak var apple4: UIImageView!
+    @IBOutlet weak var apple5: UIImageView!
+    @IBOutlet weak var apple6: UIImageView!
+    @IBOutlet weak var apple7: UIImageView!
+    
+    //This is the correct answer
     var answer = "HELLO WORLD"
-    //vv This is what appears on the screen
+    
+    //This is what appears on the screen
     var labelText = ""
     var letterInWord = false
     
