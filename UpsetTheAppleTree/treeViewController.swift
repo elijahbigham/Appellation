@@ -200,13 +200,12 @@ class treeViewController: UIViewController {
                 //And then sets the text to the UI_Label to labelText
                 textLabel.text = labelText
                 
-                //THIS IS WHERE YOU WIN THE GAME
-                if(charactersGotten == answer.count){
-                    print("YOU WIN!!!")
-                }
-                
                 //HOLY SHIT IT ACTUALLY WORKS!!!!!
             }
+        }
+        //THIS IS WHERE YOU WIN THE GAME
+        if(charactersGotten == answer.count){
+            print("YOU WIN!!!")
         }
     }
     
