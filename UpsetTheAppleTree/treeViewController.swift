@@ -24,8 +24,6 @@ class treeViewController: UIViewController {
     //This array is set to equal one of the above arrays and then answer is taken from this
     var chosenCategory : [String] = ["Hello World"]
     
-    var choice = -1
-    
     //This is the label that displays the underscores and answers.
     @IBOutlet weak var textLabel: UILabel!
     

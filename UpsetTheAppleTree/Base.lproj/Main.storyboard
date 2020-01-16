@@ -18,17 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose A Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt0-ra-UiI">
-                                <rect key="frame" x="336" y="128" width="694" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose A Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt0-ra-UiI">
+                                <rect key="frame" x="336" y="101" width="694" height="72"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="70"/>
                                 <color key="textColor" red="0.94106217619999999" green="0.14476494719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="2"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6J-sz-MOn">
-                                <rect key="frame" x="113" y="328" width="494" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6J-sz-MOn">
+                                <rect key="frame" x="166" y="407.5" width="434" height="59"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="47"/>
                                 <size key="titleShadowOffset" width="1" height="2"/>
                                 <state key="normal" title="Computer Science">
@@ -40,9 +38,8 @@
                                     <segue destination="wHl-za-U7f" kind="show" id="Gq4-jy-znA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjF-Pp-Tgl">
-                                <rect key="frame" x="809" y="326" width="363" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjF-Pp-Tgl">
+                                <rect key="frame" x="822.5" y="407.5" width="321" height="59"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="47"/>
                                 <size key="titleShadowOffset" width="1" height="2"/>
                                 <state key="normal" title="Video Games">
@@ -54,9 +51,8 @@
                                     <segue destination="wHl-za-U7f" kind="show" id="7SY-bX-qUS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqm-UL-ubg">
-                                <rect key="frame" x="224" y="503" width="292" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqm-UL-ubg">
+                                <rect key="frame" x="260.5" y="557.5" width="245" height="59"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="47"/>
                                 <size key="titleShadowOffset" width="1" height="2"/>
                                 <state key="normal" title="Elon Musk">
@@ -68,9 +64,8 @@
                                     <segue destination="wHl-za-U7f" kind="show" id="ZER-TN-iC5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbe-aR-wjW">
-                                <rect key="frame" x="794" y="501" width="378" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbe-aR-wjW">
+                                <rect key="frame" x="897.5" y="557.5" width="171" height="59"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="47"/>
                                 <size key="titleShadowOffset" width="1" height="2"/>
                                 <state key="normal" title="Memes">
@@ -82,9 +77,8 @@
                                     <segue destination="wHl-za-U7f" kind="show" id="2wL-d3-wV3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNg-2b-W54">
-                                <rect key="frame" x="224" y="678" width="292" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNg-2b-W54">
+                                <rect key="frame" x="309" y="707.5" width="148" height="59"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="47"/>
                                 <size key="titleShadowOffset" width="1" height="2"/>
                                 <state key="normal" title="Sports">
@@ -96,9 +90,8 @@
                                     <segue destination="wHl-za-U7f" kind="show" id="fTg-Cq-Tjb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aP-CE-sN8">
-                                <rect key="frame" x="524" y="807" width="292" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aP-CE-sN8">
+                                <rect key="frame" x="573.5" y="857.5" width="219" height="59"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="47"/>
                                 <size key="titleShadowOffset" width="1" height="2"/>
                                 <state key="normal" title="Pokemon">
@@ -110,9 +103,8 @@
                                     <segue destination="wHl-za-U7f" kind="show" id="Ady-vJ-JZl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDI-6e-dhH">
-                                <rect key="frame" x="765" y="676" width="437" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDI-6e-dhH">
+                                <rect key="frame" x="787.5" y="707.5" width="391" height="59"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="47"/>
                                 <size key="titleShadowOffset" width="1" height="2"/>
                                 <state key="normal" title="Things That Hurt">
@@ -126,6 +118,24 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.54068369179999998" green="1" blue="0.3397727827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qbe-aR-wjW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="300" id="6yA-gx-hwh"/>
+                            <constraint firstItem="9aP-CE-sN8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fS-Zl-2Tm"/>
+                            <constraint firstItem="mNg-2b-W54" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-300" id="Czw-gq-BXf"/>
+                            <constraint firstItem="yDI-6e-dhH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="300" id="Ge5-Ob-R2c"/>
+                            <constraint firstItem="qt0-ra-UiI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-375" id="QOW-ag-4bT"/>
+                            <constraint firstItem="mNg-2b-W54" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="225" id="Seg-SS-jrD"/>
+                            <constraint firstItem="o6J-sz-MOn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-300" id="VlM-pm-Ihh"/>
+                            <constraint firstItem="cjF-Pp-Tgl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="300" id="d7M-pp-MPd"/>
+                            <constraint firstItem="qbe-aR-wjW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="75" id="fiF-5z-N1z"/>
+                            <constraint firstItem="o6J-sz-MOn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="gA8-V2-jrL"/>
+                            <constraint firstItem="yDI-6e-dhH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="225" id="h0r-BK-3bw"/>
+                            <constraint firstItem="Dqm-UL-ubg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="75" id="iuv-7S-3if"/>
+                            <constraint firstItem="qt0-ra-UiI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qtT-ea-Zor"/>
+                            <constraint firstItem="Dqm-UL-ubg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-300" id="sfb-NO-zSA"/>
+                            <constraint firstItem="9aP-CE-sN8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="375" id="sjR-Yx-OaX"/>
+                            <constraint firstItem="cjF-Pp-Tgl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="vXf-MI-Zvg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -144,15 +154,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STIMULATE YOUR SENSES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAV-4j-lwf">
-                                <rect key="frame" x="191" y="784" width="984" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STIMULATE YOUR SENSES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAV-4j-lwf">
+                                <rect key="frame" x="373" y="782" width="620" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.54068369179999998" green="1" blue="0.3397727827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IAV-4j-lwf" firstAttribute="centerY" secondItem="Ai3-St-pHB" secondAttribute="centerY" constant="300" id="Zh9-D0-6kZ"/>
+                            <constraint firstItem="IAV-4j-lwf" firstAttribute="centerX" secondItem="Ai3-St-pHB" secondAttribute="centerX" id="tod-B4-QsB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZvA-jX-Khg"/>
                     </view>
                     <connections>
