@@ -22,7 +22,7 @@ class ViewController: UIViewController{
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let tree = segue.destination as! treeViewController
-        tree.ChooseAnswer(category: choice)
+        tree.catChoice = choice
     }
     @IBAction func CSButton(_ sender: Any) {
         choice = 0

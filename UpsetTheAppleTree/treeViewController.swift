@@ -24,6 +24,9 @@ class treeViewController: UIViewController {
     //This array is set to equal one of the above arrays and then answer is taken from this
     var chosenCategory : [String] = ["Hello World"]
     
+    //Changed by the viewController script
+    public var catChoice = -1
+    
     //This is the label that displays the underscores and answers.
     @IBOutlet weak var textLabel: UILabel!
     
@@ -34,6 +37,9 @@ class treeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //THIS NEEDS TO BE HERE
+        ChooseAnswer(category: catChoice)
     }
     //Assigns answer variable to a random word from the chosen category
     func ChooseAnswer(category : Int){
@@ -120,10 +126,6 @@ class treeViewController: UIViewController {
                 letterInWord = true
             }
         }
-    }
-    
-    @IBAction func E_Button(_ sender: Any) {
-        Update(targetLetter: "E")
     }
     
 
