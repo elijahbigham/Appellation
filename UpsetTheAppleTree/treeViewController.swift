@@ -36,10 +36,9 @@ class treeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ChooseAnswer(category: choice)
     }
     //Assigns answer variable to a random word from the chosen category
-    public func ChooseAnswer(category : Int){
+    func ChooseAnswer(category : Int){
         
         switch category{
         case 0:
