@@ -44,5 +44,4 @@ class ViewController: UIViewController{
     public func getChoice() -> Int{
         return choice
     }
-    
 }
