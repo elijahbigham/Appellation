@@ -22,25 +22,28 @@ class ViewController: UIViewController{
         super.viewDidLoad()
     }
     @IBAction func CSButton(_ sender: Any) {
-        treeViewScript.ChooseAnswer(category : 0)
+        choice = 0
     }
     @IBAction func VGButton(_ sender: Any) {
-        treeViewScript.ChooseAnswer(category : 1)
+        choice = 1
     }
     @IBAction func EMButton(_ sender: Any) {
-        treeViewScript.ChooseAnswer(category : 2)
+        choice = 2
     }
     @IBAction func MButton(_ sender: Any) {
-        treeViewScript.ChooseAnswer(category : 3)
+        choice = 3
     }
     @IBAction func SButton(_ sender: Any) {
-        treeViewScript.ChooseAnswer(category : 4)
+        choice = 4
     }
     @IBAction func TTHButton(_ sender: Any) {
-        treeViewScript.ChooseAnswer(category : 5)
+        choice = 5
     }
     @IBAction func PButton(_ sender: Any) {
-        treeViewScript.ChooseAnswer(category : 6)
+        choice = 6
+    }
+    public func getChoice() -> Int{
+        return choice
     }
     
 }
