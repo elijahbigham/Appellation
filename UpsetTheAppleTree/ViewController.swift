@@ -20,6 +20,10 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let tree = segue.destination as! treeViewController
+        tree.ChooseAnswer(category: choice)
+    }
     @IBAction func CSButton(_ sender: Any) {
         choice = 0
     }
@@ -41,7 +45,5 @@ class ViewController: UIViewController{
     @IBAction func PButton(_ sender: Any) {
         choice = 6
     }
-    public func getChoice() -> Int{
-        return choice
-    }
+
 }

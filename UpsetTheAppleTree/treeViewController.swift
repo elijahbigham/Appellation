@@ -11,7 +11,6 @@ import UIKit
 class treeViewController: UIViewController {
     
     
-    let viewControl: ViewController = ViewController()
     
     //Categories
     let COMPSCI : [String] = ["VARIABLE", "INTEGER", "DOUBLE", "METHOD", "STACK OVERFLOW", "BOOLEAN", "BUSZA", "INSTANTIATION", "INTERFACE", "SUBCLASS", "CLASS", "SUPERCLASS"]
@@ -25,8 +24,6 @@ class treeViewController: UIViewController {
     //This array is set to equal one of the above arrays and then answer is taken from this
     var chosenCategory : [String] = ["Hello World"]
     
-    public var choice = -1
-    
     //This is the label that displays the underscores and answers.
     @IBOutlet weak var textLabel: UILabel!
     
@@ -37,10 +34,9 @@ class treeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ChooseAnswer(category: viewControl.getChoice())
     }
     //Assigns answer variable to a random word from the chosen category
-    public func ChooseAnswer(category : Int){
+    func ChooseAnswer(category : Int){
         
         switch category{
         case 0:
