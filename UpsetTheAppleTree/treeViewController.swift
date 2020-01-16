@@ -157,6 +157,7 @@ class treeViewController: UIViewController {
         }
     }
     
+    //This function is the most complicated thing I have coded so far in my life
     func addLetters(letter : Character){
         for i in 0..<answer.count{
             
