@@ -19,6 +19,8 @@
 		334DFC8D23D216E500D5E6FE /* APP_ICON_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 334DFC8C23D216E500D5E6FE /* APP_ICON_2.png */; };
 		334DFC8F23D217DC00D5E6FE /* LOADING_SCREEN.png in Resources */ = {isa = PBXBuildFile; fileRef = 334DFC8E23D217DC00D5E6FE /* LOADING_SCREEN.png */; };
 		334DFC9123D2188200D5E6FE /* CATEGORY_PICKER.png in Resources */ = {isa = PBXBuildFile; fileRef = 334DFC9023D2188200D5E6FE /* CATEGORY_PICKER.png */; };
+		334DFC9823D254BE00D5E6FE /* AppelationMainTheme.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334DFC9623D254BD00D5E6FE /* AppelationMainTheme.wav */; };
+		334DFC9923D254BE00D5E6FE /* WinSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334DFC9723D254BD00D5E6FE /* WinSong.wav */; };
 		5183793B23CDEE1300720471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5183793A23CDEE1300720471 /* AppDelegate.swift */; };
 		5183793D23CDEE1300720471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5183793C23CDEE1300720471 /* ViewController.swift */; };
 		5183794023CDEE1300720471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5183793E23CDEE1300720471 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		334DFC8C23D216E500D5E6FE /* APP_ICON_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = APP_ICON_2.png; path = UpsetTheAppleTree/GameArt/APP_ICON_2.png; sourceTree = SOURCE_ROOT; };
 		334DFC8E23D217DC00D5E6FE /* LOADING_SCREEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOADING_SCREEN.png; path = UpsetTheAppleTree/GameArt/LOADING_SCREEN.png; sourceTree = SOURCE_ROOT; };
 		334DFC9023D2188200D5E6FE /* CATEGORY_PICKER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CATEGORY_PICKER.png; path = UpsetTheAppleTree/GameArt/CATEGORY_PICKER.png; sourceTree = SOURCE_ROOT; };
+		334DFC9623D254BD00D5E6FE /* AppelationMainTheme.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = AppelationMainTheme.wav; path = UpsetTheAppleTree/Music/AppelationMainTheme.wav; sourceTree = SOURCE_ROOT; };
+		334DFC9723D254BD00D5E6FE /* WinSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = WinSong.wav; path = UpsetTheAppleTree/Music/WinSong.wav; sourceTree = SOURCE_ROOT; };
 		5183793723CDEE1300720471 /* UpsetTheAppleTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpsetTheAppleTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5183793A23CDEE1300720471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5183793C23CDEE1300720471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,15 @@
 			path = Scripts;
 			sourceTree = "<group>";
 		};
+		334DFC9A23D254C600D5E6FE /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				334DFC9623D254BD00D5E6FE /* AppelationMainTheme.wav */,
+				334DFC9723D254BD00D5E6FE /* WinSong.wav */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 		5183792E23CDEE1300720471 = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +125,9 @@
 		5183793923CDEE1300720471 /* UpsetTheAppleTree */ = {
 			isa = PBXGroup;
 			children = (
-				334DFC9423D2522000D5E6FE /* GameArt */,
 				334DFC9523D2524E00D5E6FE /* Scripts */,
+				334DFC9423D2522000D5E6FE /* GameArt */,
+				334DFC9A23D254C600D5E6FE /* Music */,
 				5183793E23CDEE1300720471 /* Main.storyboard */,
 				5183794323CDEE2300720471 /* LaunchScreen.storyboard */,
 				5183794123CDEE2300720471 /* Assets.xcassets */,
@@ -184,10 +198,12 @@
 				5183794523CDEE2300720471 /* LaunchScreen.storyboard in Resources */,
 				334DFC8F23D217DC00D5E6FE /* LOADING_SCREEN.png in Resources */,
 				334DFC8223D0D54F00D5E6FE /* Apple.png in Resources */,
+				334DFC9923D254BE00D5E6FE /* WinSong.wav in Resources */,
 				334DFC8523D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png in Resources */,
 				334DFC7F23D0D54F00D5E6FE /* Background.png in Resources */,
 				5183794223CDEE2300720471 /* Assets.xcassets in Resources */,
 				334DFC8D23D216E500D5E6FE /* APP_ICON_2.png in Resources */,
+				334DFC9823D254BE00D5E6FE /* AppelationMainTheme.wav in Resources */,
 				334DFC8123D0D54F00D5E6FE /* Tree.png in Resources */,
 				334DFC8023D0D54F00D5E6FE /* Background_2.png in Resources */,
 				334DFC8723D1503700D5E6FE /* YOU_LOSE.png in Resources */,

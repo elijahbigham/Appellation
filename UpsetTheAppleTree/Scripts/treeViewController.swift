@@ -7,12 +7,8 @@
 //
 
 import UIKit
-import AVFoundation
 
 class treeViewController: UIViewController {
-    
-    //Need this to play audio
-    var audioPlayer = AVAudioPlayer()
     
     //Categories
     let COMPSCI : [String] = ["VARIABLE", "INTEGER", "DOUBLE", "METHOD", "STACK OVERFLOW", "BOOLEAN", "BUSZA", "INSTANTIATION", "INTERFACE", "SUBCLASS", "CLASS", "SUPERCLASS", "BYTE", "COMPILER", "DATABASE", "LEAP YEAR", "BINARY", "OCTAL", "DECIMAL", "HEXADECIMAL", "ASCII", "FLOAT", "CHAR", "STRING"]
@@ -55,6 +51,7 @@ class treeViewController: UIViewController {
     var labelText = ""
     var letterInWord = false
     
+    //OCCURS WHEN THE VIEW LOADS
     override func viewDidLoad() {
         super.viewDidLoad()
         
