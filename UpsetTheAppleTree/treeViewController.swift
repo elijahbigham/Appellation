@@ -86,6 +86,17 @@ class treeViewController: UIViewController {
         //THIS NEEDS TO BE HERE
         ChooseAnswer(category: catChoice)
     }
+    //variable for win or lose
+    var didWin = false
+    
+    
+    
+    //sends win or lose to end screen
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let endScreen = segue.destination as! endScreenController
+        endScreen.didWin = didWin
+    }
+    
     //Assigns answer variable to a random word from the chosen category
     func ChooseAnswer(category : Int){
         
@@ -158,6 +169,13 @@ class treeViewController: UIViewController {
             //Make apple dissappear
             LoseApples()
         }
+        //checks if you've won
+        let charset = CharacterSet(charactersIn: "_")
+            if labelText.rangeOfCharacter(from: charset) == nil{
+            
+                didWin = true
+            performSegue(withIdentifier: "toEnd", sender: self)
+            }
         
         //For debugging
         print(answer.count)
@@ -230,14 +248,17 @@ class treeViewController: UIViewController {
             print("2 apples left")
             apple5.isHidden = true
         case 1:
-            print("1 apples left")
+            print("1 appleßs left")
             apple6.isHidden = true
         case 0:
             //THIS IS WHERE YOU LOSE THE GAME
             print("You Lose!")
             apple7.isHidden = true
+            didWin = false
+            performSegue(withIdentifier: "toEnd", sender: self)
+            
         default:
-            print("Dems wierd apples")
+            print("Dems weird apples")
         }
     }
     

@@ -19,6 +19,7 @@
 		5183794223CDEE2300720471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5183794123CDEE2300720471 /* Assets.xcassets */; };
 		5183794523CDEE2300720471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5183794323CDEE2300720471 /* LaunchScreen.storyboard */; };
 		5183794F23CE5FE500720471 /* treeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5183794E23CE5FE500720471 /* treeViewController.swift */; };
+		51A604B023D120E800E40900 /* endScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A604AF23D120E700E40900 /* endScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		5183794423CDEE2300720471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5183794623CDEE2300720471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5183794E23CE5FE500720471 /* treeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = treeViewController.swift; sourceTree = "<group>"; };
+		51A604AF23D120E700E40900 /* endScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				5183793A23CDEE1300720471 /* AppDelegate.swift */,
 				5183793C23CDEE1300720471 /* ViewController.swift */,
 				5183794E23CE5FE500720471 /* treeViewController.swift */,
+				51A604AF23D120E700E40900 /* endScreenController.swift */,
 				5183793E23CDEE1300720471 /* Main.storyboard */,
 				334DFC8423D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png */,
 				334DFC7D23D0D54F00D5E6FE /* Apple.png */,
@@ -165,6 +168,7 @@
 				5183794F23CE5FE500720471 /* treeViewController.swift in Sources */,
 				5183793D23CDEE1300720471 /* ViewController.swift in Sources */,
 				5183793B23CDEE1300720471 /* AppDelegate.swift in Sources */,
+				51A604B023D120E800E40900 /* endScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

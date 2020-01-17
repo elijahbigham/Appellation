@@ -154,7 +154,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FINAL_BACKGROUND_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="eAI-Jz-84f">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FINAL_BACKGROUND_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="eAI-Jz-84f" customClass="I">
                                 <rect key="frame" x="-238" y="-69" width="1500" height="1504"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1504" id="H45-PS-LpA"/>
@@ -769,11 +769,58 @@
                         <outlet property="apple6" destination="EFv-1j-2eH" id="4Zg-33-Czf"/>
                         <outlet property="apple7" destination="FEz-7l-tja" id="6Zi-0L-tbc"/>
                         <outlet property="textLabel" destination="IAV-4j-lwf" id="ybg-Yg-Rhl"/>
+                        <segue destination="uvj-SF-dSg" kind="show" identifier="toEnd" id="9a9-GB-7bh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXx-Lh-gf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="896.48437499999989" y="115.95900439238652"/>
+        </scene>
+        <!--End Screen Controller-->
+        <scene sceneID="R7k-5Q-ZoO">
+            <objects>
+                <viewController id="uvj-SF-dSg" customClass="endScreenController" customModule="UpsetTheAppleTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CvJ-8D-bfj">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Lose!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXb-sG-CfZ">
+                                <rect key="frame" x="83" y="1042" width="263" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="50"/>
+                                <color key="textColor" red="0.94106217619999999" green="0.14476494719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cf-sA-3Sj">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="cnD-n3-5BZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Win!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fS6-LL-ev0">
+                                <rect key="frame" x="707" y="114" width="245" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="50"/>
+                                <color key="textColor" red="0.94106217619999999" green="0.14476494719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54068369179999998" green="1" blue="0.3397727827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Lzk-tn-hII"/>
+                    </view>
+                    <connections>
+                        <outlet property="youLose" destination="WXb-sG-CfZ" id="laY-5D-Qsj"/>
+                        <outlet property="youWin" destination="fS6-LL-ev0" id="I7P-dH-qMc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqo-Ro-hMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898.82812499999989" y="808.63836017569542"/>
         </scene>
     </scenes>
     <resources>
