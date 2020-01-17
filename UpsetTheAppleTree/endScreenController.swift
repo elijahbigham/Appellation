@@ -10,24 +10,23 @@ import UIKit
 
 class endScreenController: UIViewController {
     
-    @IBOutlet weak var youWin: UILabel!
-    @IBOutlet weak var youLose: UILabel!
+    @IBOutlet weak var YouWin: UIImageView!
+    @IBOutlet weak var YouLose: UIImageView!
+    
     
     public var didWin: Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        //sets up labels
-        youWin.center = self.view.center
-        youWin.isHidden = true
-        youLose.center = self.view.center
-        youLose.isHidden = true
+        //sets up end screens
+        YouWin.isHidden = true
+        YouLose.isHidden = true
         
         //displays the one true label
         if (didWin){
-            youWin.isHidden = false
+            YouWin.isHidden = false
         }
         else{
-            youLose.isHidden = false
+            YouLose.isHidden = false
         }
 
         // Do any additional setup after loading the view.
