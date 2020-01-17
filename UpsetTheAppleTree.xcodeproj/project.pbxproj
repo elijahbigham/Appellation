@@ -29,18 +29,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		334DFC7A23D0D54E00D5E6FE /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = betterImages/Background.png; sourceTree = SOURCE_ROOT; };
-		334DFC7B23D0D54F00D5E6FE /* Background_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background_2.png; path = betterImages/Background_2.png; sourceTree = SOURCE_ROOT; };
-		334DFC7C23D0D54F00D5E6FE /* Tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tree.png; path = betterImages/Tree.png; sourceTree = SOURCE_ROOT; };
-		334DFC7D23D0D54F00D5E6FE /* Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apple.png; path = betterImages/Apple.png; sourceTree = SOURCE_ROOT; };
-		334DFC7E23D0D54F00D5E6FE /* FINAL_BACKGROUND.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FINAL_BACKGROUND.png; path = betterImages/FINAL_BACKGROUND.png; sourceTree = SOURCE_ROOT; };
-		334DFC8423D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FINAL_BACKGROUND_2.png; path = betterImages/FINAL_BACKGROUND_2.png; sourceTree = SOURCE_ROOT; };
-		334DFC8623D1503700D5E6FE /* YOU_LOSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YOU_LOSE.png; path = betterImages/YOU_LOSE.png; sourceTree = SOURCE_ROOT; };
-		334DFC8823D15C3A00D5E6FE /* YOU_WIN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YOU_WIN.png; path = betterImages/YOU_WIN.png; sourceTree = SOURCE_ROOT; };
-		334DFC8A23D16C2D00D5E6FE /* APPLICATION_ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = APPLICATION_ICON.png; path = betterImages/APPLICATION_ICON.png; sourceTree = SOURCE_ROOT; };
-		334DFC8C23D216E500D5E6FE /* APP_ICON_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = APP_ICON_2.png; path = betterImages/APP_ICON_2.png; sourceTree = SOURCE_ROOT; };
-		334DFC8E23D217DC00D5E6FE /* LOADING_SCREEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOADING_SCREEN.png; path = betterImages/LOADING_SCREEN.png; sourceTree = SOURCE_ROOT; };
-		334DFC9023D2188200D5E6FE /* CATEGORY_PICKER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CATEGORY_PICKER.png; path = betterImages/CATEGORY_PICKER.png; sourceTree = SOURCE_ROOT; };
+		334DFC7A23D0D54E00D5E6FE /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = UpsetTheAppleTree/GameArt/Background.png; sourceTree = SOURCE_ROOT; };
+		334DFC7B23D0D54F00D5E6FE /* Background_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background_2.png; path = UpsetTheAppleTree/GameArt/Background_2.png; sourceTree = SOURCE_ROOT; };
+		334DFC7C23D0D54F00D5E6FE /* Tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tree.png; path = UpsetTheAppleTree/GameArt/Tree.png; sourceTree = SOURCE_ROOT; };
+		334DFC7D23D0D54F00D5E6FE /* Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apple.png; path = UpsetTheAppleTree/Apple.png; sourceTree = SOURCE_ROOT; };
+		334DFC7E23D0D54F00D5E6FE /* FINAL_BACKGROUND.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FINAL_BACKGROUND.png; path = UpsetTheAppleTree/GameArt/FINAL_BACKGROUND.png; sourceTree = SOURCE_ROOT; };
+		334DFC8423D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FINAL_BACKGROUND_2.png; path = UpsetTheAppleTree/FINAL_BACKGROUND_2.png; sourceTree = SOURCE_ROOT; };
+		334DFC8623D1503700D5E6FE /* YOU_LOSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YOU_LOSE.png; path = UpsetTheAppleTree/GameArt/YOU_LOSE.png; sourceTree = SOURCE_ROOT; };
+		334DFC8823D15C3A00D5E6FE /* YOU_WIN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YOU_WIN.png; path = UpsetTheAppleTree/GameArt/YOU_WIN.png; sourceTree = SOURCE_ROOT; };
+		334DFC8A23D16C2D00D5E6FE /* APPLICATION_ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = APPLICATION_ICON.png; path = UpsetTheAppleTree/GameArt/APPLICATION_ICON.png; sourceTree = SOURCE_ROOT; };
+		334DFC8C23D216E500D5E6FE /* APP_ICON_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = APP_ICON_2.png; path = UpsetTheAppleTree/GameArt/APP_ICON_2.png; sourceTree = SOURCE_ROOT; };
+		334DFC8E23D217DC00D5E6FE /* LOADING_SCREEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOADING_SCREEN.png; path = UpsetTheAppleTree/GameArt/LOADING_SCREEN.png; sourceTree = SOURCE_ROOT; };
+		334DFC9023D2188200D5E6FE /* CATEGORY_PICKER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CATEGORY_PICKER.png; path = UpsetTheAppleTree/GameArt/CATEGORY_PICKER.png; sourceTree = SOURCE_ROOT; };
 		5183793723CDEE1300720471 /* UpsetTheAppleTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpsetTheAppleTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5183793A23CDEE1300720471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5183793C23CDEE1300720471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +63,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		334DFC9423D2522000D5E6FE /* GameArt */ = {
+			isa = PBXGroup;
+			children = (
+				334DFC7E23D0D54F00D5E6FE /* FINAL_BACKGROUND.png */,
+				334DFC8E23D217DC00D5E6FE /* LOADING_SCREEN.png */,
+				334DFC7C23D0D54F00D5E6FE /* Tree.png */,
+				334DFC8623D1503700D5E6FE /* YOU_LOSE.png */,
+				334DFC8823D15C3A00D5E6FE /* YOU_WIN.png */,
+				334DFC8A23D16C2D00D5E6FE /* APPLICATION_ICON.png */,
+				334DFC8C23D216E500D5E6FE /* APP_ICON_2.png */,
+				334DFC7D23D0D54F00D5E6FE /* Apple.png */,
+				334DFC7B23D0D54F00D5E6FE /* Background_2.png */,
+				334DFC7A23D0D54E00D5E6FE /* Background.png */,
+				334DFC9023D2188200D5E6FE /* CATEGORY_PICKER.png */,
+				334DFC8423D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png */,
+			);
+			path = GameArt;
+			sourceTree = "<group>";
+		};
+		334DFC9523D2524E00D5E6FE /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				5183793A23CDEE1300720471 /* AppDelegate.swift */,
+				5183793C23CDEE1300720471 /* ViewController.swift */,
+				5183794E23CE5FE500720471 /* treeViewController.swift */,
+				51A604AF23D120E700E40900 /* endScreenController.swift */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		5183792E23CDEE1300720471 = {
 			isa = PBXGroup;
 			children = (
@@ -82,26 +112,12 @@
 		5183793923CDEE1300720471 /* UpsetTheAppleTree */ = {
 			isa = PBXGroup;
 			children = (
-				5183793A23CDEE1300720471 /* AppDelegate.swift */,
-				5183793C23CDEE1300720471 /* ViewController.swift */,
-				5183794E23CE5FE500720471 /* treeViewController.swift */,
-				51A604AF23D120E700E40900 /* endScreenController.swift */,
+				334DFC9423D2522000D5E6FE /* GameArt */,
+				334DFC9523D2524E00D5E6FE /* Scripts */,
 				5183793E23CDEE1300720471 /* Main.storyboard */,
 				5183794323CDEE2300720471 /* LaunchScreen.storyboard */,
 				5183794123CDEE2300720471 /* Assets.xcassets */,
-				334DFC8E23D217DC00D5E6FE /* LOADING_SCREEN.png */,
-				334DFC8823D15C3A00D5E6FE /* YOU_WIN.png */,
-				334DFC8623D1503700D5E6FE /* YOU_LOSE.png */,
-				334DFC8423D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png */,
-				334DFC7D23D0D54F00D5E6FE /* Apple.png */,
-				334DFC7B23D0D54F00D5E6FE /* Background_2.png */,
-				334DFC7A23D0D54E00D5E6FE /* Background.png */,
-				334DFC7E23D0D54F00D5E6FE /* FINAL_BACKGROUND.png */,
-				334DFC7C23D0D54F00D5E6FE /* Tree.png */,
-				334DFC9023D2188200D5E6FE /* CATEGORY_PICKER.png */,
 				5183794623CDEE2300720471 /* Info.plist */,
-				334DFC8A23D16C2D00D5E6FE /* APPLICATION_ICON.png */,
-				334DFC8C23D216E500D5E6FE /* APP_ICON_2.png */,
 			);
 			path = UpsetTheAppleTree;
 			sourceTree = "<group>";
