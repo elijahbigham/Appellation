@@ -318,7 +318,9 @@ class treeViewController: UIViewController {
             Update(pressedLetter: "Z")
         default:
             print("Something bad happened")
+        
         }
+        sender.backgroundColor = UIColor.gray
     }
     
     
