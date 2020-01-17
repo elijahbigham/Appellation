@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOADING_SCREEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="DjR-UQ-08w">
-                                <rect key="frame" x="-165.5" y="-18.5" width="1355" height="1403"/>
+                                <rect key="frame" x="-204" y="-29" width="1432" height="1424"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="1355" id="LrR-py-eAH"/>
-                                    <constraint firstAttribute="height" constant="1403" id="ld5-RE-s1b"/>
+                                    <constraint firstAttribute="width" constant="1432" id="UQh-an-4hU"/>
+                                    <constraint firstAttribute="height" constant="1424" id="aAK-WD-fTT"/>
                                 </constraints>
                             </imageView>
                         </subviews>
