@@ -72,8 +72,7 @@ class treeViewController: UIViewController {
     //This is the correct answer
     var answer = "HELLO WORLD"
     
-    //These are what keeps track if you win or lose
-    var charactersGotten = 0
+    //If these hit 0 you lose
     var applesLeft = 7
     
     //This is what appears on the screen
@@ -88,8 +87,6 @@ class treeViewController: UIViewController {
     }
     //variable for win or lose
     var didWin = false
-    
-    
     
     //sends win or lose to end screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
@@ -169,17 +166,13 @@ class treeViewController: UIViewController {
             //Make apple dissappear
             LoseApples()
         }
-        //checks if you've won
+        //THIS IS WHERE YOU WIN THE GAME
+        //Checks if there are any underscores left in labelText
         let charset = CharacterSet(charactersIn: "_")
-            if labelText.rangeOfCharacter(from: charset) == nil{
-            
-                didWin = true
+        if labelText.rangeOfCharacter(from: charset) == nil{
+            didWin = true
             performSegue(withIdentifier: "toEnd", sender: self)
-            }
-        
-        //For debugging
-        print(answer.count)
-        print(charactersGotten)
+        }
     }
     
     //This function is the most complicated thing I have coded so far in my life
@@ -208,9 +201,6 @@ class treeViewController: UIViewController {
                         newLabelText += String(nestedCurrentLetter)
                     } else {
                         newLabelText += String(letter)
-                        
-                        //We need this to check if we win the game
-                        charactersGotten += 1
                     }
                 }
                 //This is where it sets labelText to the finished newLabelText
@@ -220,10 +210,6 @@ class treeViewController: UIViewController {
                 
                 //HOLY SHIT IT ACTUALLY WORKS!!!!!
             }
-        }
-        //THIS IS WHERE YOU WIN THE GAME
-        if(charactersGotten == answer.count){
-            print("YOU WIN!!!")
         }
     }
     
@@ -322,7 +308,4 @@ class treeViewController: UIViewController {
         }
         sender.backgroundColor = UIColor.gray
     }
-    
-    
-    
 }
