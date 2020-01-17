@@ -604,6 +604,26 @@
                                     <action selector="buttonPressWithSender:" destination="wHl-za-U7f" eventType="touchUpInside" id="sFk-Qo-ojq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3e-ba-yeP">
+                                <rect key="frame" x="37" y="412" width="207" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="9yF-qj-hAR"/>
+                                    <constraint firstAttribute="width" constant="207" id="R4B-1B-2lH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Goes Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dp0-ft-lpK">
+                                <rect key="frame" x="37" y="459" width="366" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="HXb-7W-i2O"/>
+                                    <constraint firstAttribute="width" constant="366" id="UtW-NK-msc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.54068369179999998" green="1" blue="0.3397727827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -619,6 +639,8 @@
                             <constraint firstItem="47B-Ll-jig" firstAttribute="centerY" secondItem="Ai3-St-pHB" secondAttribute="centerY" constant="500" id="6UH-bm-ssS"/>
                             <constraint firstItem="UZD-Sd-aah" firstAttribute="top" secondItem="F5h-Rn-tyU" secondAttribute="bottom" constant="50" id="8N0-PU-LOJ"/>
                             <constraint firstItem="3zR-ay-aew" firstAttribute="centerX" secondItem="Ai3-St-pHB" secondAttribute="centerX" constant="178" id="8dl-Uv-umU"/>
+                            <constraint firstItem="g3e-ba-yeP" firstAttribute="centerX" secondItem="Ai3-St-pHB" secondAttribute="centerX" constant="-371.5" id="9jX-cV-LZN"/>
+                            <constraint firstItem="g3e-ba-yeP" firstAttribute="centerY" secondItem="Ai3-St-pHB" secondAttribute="centerY" constant="-238.5" id="AVJ-Ct-1vm"/>
                             <constraint firstItem="FEz-7l-tja" firstAttribute="leading" secondItem="In5-HT-3R5" secondAttribute="trailing" constant="8" id="CFW-UN-Mc5"/>
                             <constraint firstItem="cgo-bt-UmT" firstAttribute="centerY" secondItem="Ai3-St-pHB" secondAttribute="centerY" constant="400" id="CFZ-73-96r"/>
                             <constraint firstItem="FEz-7l-tja" firstAttribute="centerX" secondItem="Ai3-St-pHB" secondAttribute="centerX" constant="27.5" id="CMJ-iv-hrU"/>
@@ -648,6 +670,7 @@
                             <constraint firstItem="Z8A-yc-XMW" firstAttribute="top" secondItem="UZD-Sd-aah" secondAttribute="bottom" constant="50" id="N1b-Rk-RPv"/>
                             <constraint firstItem="7T1-dq-TNk" firstAttribute="leading" secondItem="Efj-qI-BDS" secondAttribute="trailing" constant="50" id="NQb-c3-uaq"/>
                             <constraint firstItem="yoZ-MG-lcF" firstAttribute="leading" secondItem="iJU-6v-2m9" secondAttribute="trailing" constant="8" id="OTQ-us-5Jx"/>
+                            <constraint firstItem="Dp0-ft-lpK" firstAttribute="centerX" secondItem="Ai3-St-pHB" secondAttribute="centerX" constant="-292" id="Oth-Q4-2oi"/>
                             <constraint firstItem="KGU-KM-yTQ" firstAttribute="top" secondItem="dqd-Ij-h3F" secondAttribute="bottom" constant="50" id="Pza-fS-AR4"/>
                             <constraint firstItem="yHW-5W-oPt" firstAttribute="leading" secondItem="KGU-KM-yTQ" secondAttribute="trailing" constant="50" id="QXU-FR-oEw"/>
                             <constraint firstItem="EFv-1j-2eH" firstAttribute="centerY" secondItem="Ai3-St-pHB" secondAttribute="centerY" constant="-364.5" id="QfB-sE-2Wm"/>
@@ -665,6 +688,7 @@
                             <constraint firstItem="x6z-U9-wOu" firstAttribute="centerX" secondItem="Ai3-St-pHB" secondAttribute="centerX" constant="-22" id="Tds-TL-mig"/>
                             <constraint firstItem="yHW-5W-oPt" firstAttribute="top" secondItem="WaZ-gt-0eS" secondAttribute="bottom" constant="50" id="TiM-h9-c4k"/>
                             <constraint firstItem="BIl-mD-qug" firstAttribute="leading" secondItem="ywX-3t-psp" secondAttribute="trailing" constant="50" id="Tm7-je-5ix"/>
+                            <constraint firstItem="Dp0-ft-lpK" firstAttribute="centerY" secondItem="Ai3-St-pHB" secondAttribute="centerY" constant="-191.5" id="U96-D8-5KH"/>
                             <constraint firstItem="PcK-fM-76f" firstAttribute="centerY" secondItem="Ai3-St-pHB" secondAttribute="centerY" constant="-466.5" id="UU7-Qj-oal"/>
                             <constraint firstItem="F5h-Rn-tyU" firstAttribute="leading" secondItem="8AM-iB-1AN" secondAttribute="trailing" constant="50" id="UXj-ct-NsF"/>
                             <constraint firstItem="PcK-fM-76f" firstAttribute="centerX" secondItem="Ai3-St-pHB" secondAttribute="centerX" constant="188.5" id="V3M-gm-jEU"/>
@@ -736,6 +760,7 @@
                         <outlet property="apple5" destination="PcK-fM-76f" id="YYW-Nd-IA5"/>
                         <outlet property="apple6" destination="EFv-1j-2eH" id="4Zg-33-Czf"/>
                         <outlet property="apple7" destination="FEz-7l-tja" id="6Zi-0L-tbc"/>
+                        <outlet property="categoryLabel" destination="Dp0-ft-lpK" id="6al-Zh-81L"/>
                         <outlet property="textLabel" destination="IAV-4j-lwf" id="ybg-Yg-Rhl"/>
                         <segue destination="uvj-SF-dSg" kind="show" identifier="toEnd" id="9a9-GB-7bh"/>
                     </connections>

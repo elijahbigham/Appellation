@@ -30,6 +30,9 @@ class treeViewController: UIViewController {
     //This is the label that displays the underscores and answers.
     @IBOutlet weak var textLabel: UILabel!
     
+    //Desiplays category selected in tree view
+    @IBOutlet weak var categoryLabel: UILabel!
+    
     //Apples
     @IBOutlet weak var apple1: UIImageView!
     @IBOutlet weak var apple2: UIImageView!
@@ -71,18 +74,25 @@ class treeViewController: UIViewController {
         switch category{
         case 0:
             chosenCategory = COMPSCI
+            categoryLabel.text = "Computer Science"
         case 1:
             chosenCategory = VIDEOGAMES
+            categoryLabel.text = "Video Games"
         case 2:
             chosenCategory = ELONMUSK
+            categoryLabel.text = "Elon Musk"
         case 3:
             chosenCategory = MEMES
+            categoryLabel.text = "Memes"
         case 4:
             chosenCategory = SPORTS
+            categoryLabel.text = "Sports"
         case 5:
             chosenCategory = THINGSTHATHURT
+            categoryLabel.text = "Things That Hurt"
         case 6:
             chosenCategory = POKEMON
+            categoryLabel.text = "Pokemon"
         default:
             print("Something Broke")
         }
