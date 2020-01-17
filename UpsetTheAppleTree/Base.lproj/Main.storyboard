@@ -784,38 +784,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Lose!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXb-sG-CfZ">
-                                <rect key="frame" x="83" y="1042" width="263" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="50"/>
-                                <color key="textColor" red="0.94106217619999999" green="0.14476494719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="1" height="2"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cf-sA-3Sj">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cf-sA-3Sj">
+                                <rect key="frame" x="-320" y="0.0" width="1664" height="1366"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1664" id="4kK-zE-MF4"/>
+                                    <constraint firstAttribute="height" constant="1366" id="P0U-Io-ENs"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="cnD-n3-5BZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Win!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fS6-LL-ev0">
-                                <rect key="frame" x="707" y="114" width="245" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="50"/>
-                                <color key="textColor" red="0.94106217619999999" green="0.14476494719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="1" height="2"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YOU_LOSE.png" translatesAutoresizingMaskIntoConstraints="NO" id="gga-M5-5d2">
+                                <rect key="frame" x="-191.5" y="-100" width="1407" height="1566"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1566" id="07U-XL-wap"/>
+                                    <constraint firstAttribute="width" constant="1407" id="GN3-Vd-Zmu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YOU_LOSE.png" translatesAutoresizingMaskIntoConstraints="NO" id="zN5-Eo-ofm">
+                                <rect key="frame" x="-191.5" y="-100" width="1407" height="1566"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1407" id="Ahg-oU-h1a"/>
+                                    <constraint firstAttribute="height" constant="1566" id="Bum-xA-jZP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.54068369179999998" green="1" blue="0.3397727827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zN5-Eo-ofm" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="28s-1D-UCq"/>
+                            <constraint firstItem="gga-M5-5d2" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="EMc-hJ-VDh"/>
+                            <constraint firstItem="zN5-Eo-ofm" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" id="KMh-n9-pqu"/>
+                            <constraint firstItem="6Cf-sA-3Sj" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" id="NvG-qi-FYy"/>
+                            <constraint firstItem="gga-M5-5d2" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" id="ik5-TJ-QD6"/>
+                            <constraint firstItem="6Cf-sA-3Sj" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="rWi-0F-EAS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Lzk-tn-hII"/>
                     </view>
                     <connections>
-                        <outlet property="youLose" destination="WXb-sG-CfZ" id="laY-5D-Qsj"/>
-                        <outlet property="youWin" destination="fS6-LL-ev0" id="I7P-dH-qMc"/>
+                        <outlet property="YouLose" destination="zN5-Eo-ofm" id="6xq-dC-4su"/>
+                        <outlet property="YouWin" destination="gga-M5-5d2" id="0lp-yr-09S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iqo-Ro-hMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -826,6 +833,7 @@
     <resources>
         <image name="Apple.png" width="126" height="125"/>
         <image name="FINAL_BACKGROUND_2.png" width="600" height="600"/>
+        <image name="YOU_LOSE.png" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7SY-bX-qUS"/>

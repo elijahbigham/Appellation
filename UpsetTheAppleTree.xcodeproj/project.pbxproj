@@ -13,6 +13,7 @@
 		334DFC8223D0D54F00D5E6FE /* Apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 334DFC7D23D0D54F00D5E6FE /* Apple.png */; };
 		334DFC8323D0D54F00D5E6FE /* FINAL_BACKGROUND.png in Resources */ = {isa = PBXBuildFile; fileRef = 334DFC7E23D0D54F00D5E6FE /* FINAL_BACKGROUND.png */; };
 		334DFC8523D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 334DFC8423D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png */; };
+		334DFC8723D1503700D5E6FE /* YOU_LOSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 334DFC8623D1503700D5E6FE /* YOU_LOSE.png */; };
 		5183793B23CDEE1300720471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5183793A23CDEE1300720471 /* AppDelegate.swift */; };
 		5183793D23CDEE1300720471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5183793C23CDEE1300720471 /* ViewController.swift */; };
 		5183794023CDEE1300720471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5183793E23CDEE1300720471 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		334DFC7D23D0D54F00D5E6FE /* Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apple.png; path = betterImages/Apple.png; sourceTree = SOURCE_ROOT; };
 		334DFC7E23D0D54F00D5E6FE /* FINAL_BACKGROUND.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FINAL_BACKGROUND.png; path = betterImages/FINAL_BACKGROUND.png; sourceTree = SOURCE_ROOT; };
 		334DFC8423D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FINAL_BACKGROUND_2.png; path = betterImages/FINAL_BACKGROUND_2.png; sourceTree = SOURCE_ROOT; };
+		334DFC8623D1503700D5E6FE /* YOU_LOSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YOU_LOSE.png; path = betterImages/YOU_LOSE.png; sourceTree = SOURCE_ROOT; };
 		5183793723CDEE1300720471 /* UpsetTheAppleTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpsetTheAppleTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5183793A23CDEE1300720471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5183793C23CDEE1300720471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				5183794E23CE5FE500720471 /* treeViewController.swift */,
 				51A604AF23D120E700E40900 /* endScreenController.swift */,
 				5183793E23CDEE1300720471 /* Main.storyboard */,
+				334DFC8623D1503700D5E6FE /* YOU_LOSE.png */,
 				334DFC8423D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png */,
 				334DFC7D23D0D54F00D5E6FE /* Apple.png */,
 				334DFC7B23D0D54F00D5E6FE /* Background_2.png */,
@@ -154,6 +157,7 @@
 				5183794223CDEE2300720471 /* Assets.xcassets in Resources */,
 				334DFC8123D0D54F00D5E6FE /* Tree.png in Resources */,
 				334DFC8023D0D54F00D5E6FE /* Background_2.png in Resources */,
+				334DFC8723D1503700D5E6FE /* YOU_LOSE.png in Resources */,
 				5183794023CDEE1300720471 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
