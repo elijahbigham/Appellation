@@ -40,35 +40,6 @@ class treeViewController: UIViewController {
     @IBOutlet weak var apple7: UIImageView!
     //END OF APPLES
     
-    //Buttons
-    @IBOutlet weak var _A: UIButton!
-    @IBOutlet weak var _B: UIButton!
-    @IBOutlet weak var _C: UIButton!
-    @IBOutlet weak var _D: UIButton!
-    @IBOutlet weak var _E: UIButton!
-    @IBOutlet weak var _F: UIButton!
-    @IBOutlet weak var _G: UIButton!
-    @IBOutlet weak var _H: UIButton!
-    @IBOutlet weak var _I: UIButton!
-    @IBOutlet weak var _J: UIButton!
-    @IBOutlet weak var _K: UIButton!
-    @IBOutlet weak var _L: UIButton!
-    @IBOutlet weak var _M: UIButton!
-    @IBOutlet weak var _N: UIButton!
-    @IBOutlet weak var _O: UIButton!
-    @IBOutlet weak var _P: UIButton!
-    @IBOutlet weak var _Q: UIButton!
-    @IBOutlet weak var _R: UIButton!
-    @IBOutlet weak var _S: UIButton!
-    @IBOutlet weak var _T: UIButton!
-    @IBOutlet weak var _U: UIButton!
-    @IBOutlet weak var _V: UIButton!
-    @IBOutlet weak var _W: UIButton!
-    @IBOutlet weak var _X: UIButton!
-    @IBOutlet weak var _Y: UIButton!
-    @IBOutlet weak var _Z: UIButton!
-    //END OF BUTTONS
-    
     //This is the correct answer
     var answer = "HELLO WORLD"
     
