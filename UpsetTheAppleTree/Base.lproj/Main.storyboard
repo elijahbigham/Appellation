@@ -794,18 +794,18 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="cnD-n3-5BZ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YOU_LOSE.png" translatesAutoresizingMaskIntoConstraints="NO" id="gga-M5-5d2">
-                                <rect key="frame" x="-191.5" y="-100" width="1407" height="1566"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1566" id="07U-XL-wap"/>
-                                    <constraint firstAttribute="width" constant="1407" id="GN3-Vd-Zmu"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YOU_LOSE.png" translatesAutoresizingMaskIntoConstraints="NO" id="zN5-Eo-ofm">
                                 <rect key="frame" x="-191.5" y="-100" width="1407" height="1566"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1407" id="Ahg-oU-h1a"/>
                                     <constraint firstAttribute="height" constant="1566" id="Bum-xA-jZP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YOU_WIN.png" translatesAutoresizingMaskIntoConstraints="NO" id="gga-M5-5d2">
+                                <rect key="frame" x="-191.5" y="-100" width="1407" height="1566"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1566" id="07U-XL-wap"/>
+                                    <constraint firstAttribute="width" constant="1407" id="GN3-Vd-Zmu"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -834,6 +834,7 @@
         <image name="Apple.png" width="126" height="125"/>
         <image name="FINAL_BACKGROUND_2.png" width="600" height="600"/>
         <image name="YOU_LOSE.png" width="600" height="600"/>
+        <image name="YOU_WIN.png" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7SY-bX-qUS"/>
