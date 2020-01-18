@@ -42,7 +42,7 @@ class AudioManager {
             print(error)
         }
         //Sets volume of sound effect to avoid ear rape
-        rightLetter.volume = 0.2
+        rightLetter.volume = 0.15
         //Then plays audio once
         rightLetter.play()
     }
