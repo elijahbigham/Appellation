@@ -10,7 +10,7 @@ import UIKit
 
 class treeViewController: UIViewController {
     
-    let Audio : AudioManager = AudioManager()
+    let audio : AudioManager!
     
     //Categories
     let COMPSCI : [String] = ["VARIABLE", "INTEGER", "DOUBLE", "METHOD", "STACK OVERFLOW", "BOOLEAN", "BUSZA", "INSTANTIATION", "INTERFACE", "SUBCLASS", "CLASS", "SUPERCLASS", "BYTE", "COMPILER", "DATABASE", "LEAP YEAR", "BINARY", "OCTAL", "DECIMAL", "HEXADECIMAL", "ASCII", "FLOAT", "CHAR", "STRING", "DOCUMENTATION", "ERROR", "INDEX", "OUT OF BOUNDS", "PUBLIC", "PRIVATE", "STATIC", "RETURN"]
@@ -67,6 +67,7 @@ class treeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let endScreen = segue.destination as! endScreenController
         endScreen.didWin = didWin
+        endScreen.audio = audio
     }
     
     //Assigns answer variable to a random word from the chosen category
@@ -144,12 +145,12 @@ class treeViewController: UIViewController {
             //Resets boolean for the next choice
             letterInWord = false
             //Then plays sound effect
-            Audio.playRightLetter()
+            audio.playRightLetter()
         } else {
             //Make apple dissappear
             LoseApples()
             //Then plays sound effect
-            Audio.playLoseApple()
+            audio.playLoseApple()
         }
         //THIS IS WHERE YOU WIN THE GAME
         //Checks if there are any underscores left in labelText

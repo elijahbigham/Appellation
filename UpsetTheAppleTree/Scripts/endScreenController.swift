@@ -11,7 +11,7 @@ import UIKit
 class endScreenController: UIViewController {
     
     //Allows access to the AudioManager methods
-    let Audio: AudioManager = AudioManager()
+    let audio: AudioManager!
     
     @IBOutlet weak var YouWin: UIImageView!
     @IBOutlet weak var YouLose: UIImageView!
@@ -21,8 +21,7 @@ class endScreenController: UIViewController {
     override func viewDidLoad() {
         //Stops main theme from playing
         
-        //This causes an EXC_BAD_ACCESS error vvv
-       // Audio.stopMainTheme()
+        audio.stopMainTheme()
         
         super.viewDidLoad()
         //sets up end screens

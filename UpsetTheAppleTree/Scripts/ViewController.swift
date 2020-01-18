@@ -14,7 +14,7 @@ class ViewController: UIViewController{
     let treeViewScript: treeViewController = treeViewController()
     
     //Allows access to the AudioManager methods
-    let Audio: AudioManager = AudioManager()
+    let audio: AudioManager = AudioManager()
     
     @IBOutlet weak var chooseACategory: UILabel!
     
@@ -24,11 +24,12 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         //Starts the main theme
-        Audio.playMainTheme()
+        audio.playMainTheme()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let tree = segue.destination as! treeViewController
         tree.catChoice = choice
+        tree.audio = audio
     }
     @IBAction func CSButton(_ sender: Any) {
         choice = 0
