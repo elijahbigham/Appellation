@@ -11,7 +11,7 @@ import UIKit
 class endScreenController: UIViewController {
     
     //Allows access to the AudioManager methods
-    let audio: AudioManager!
+    var audio: AudioManager!
     
     @IBOutlet weak var YouWin: UIImageView!
     @IBOutlet weak var YouLose: UIImageView!
