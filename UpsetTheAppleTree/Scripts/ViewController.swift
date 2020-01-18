@@ -7,14 +7,14 @@
 //
 
 import UIKit
-import AVFoundation
 
 class ViewController: UIViewController{
     
-    //Need this to play audio
-    var audioPlayer = AVAudioPlayer()
-    
+    //Allows access to the treeViewController methods
     let treeViewScript: treeViewController = treeViewController()
+    
+    //Allows access to the AudioManager methods
+    let Audio: AudioManager = AudioManager()
     
     @IBOutlet weak var chooseACategory: UILabel!
     
@@ -23,21 +23,8 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Sets up main theme so it is ready to play
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "AppelationMainTheme", ofType: "wav")!))
-            audioPlayer.prepareToPlay()
-        } catch {
-            print(error)
-        }
-        
-        if(audioPlayer.isPlaying == false){
-            //Tells the audioPlayer to loop an infinite number of times
-            audioPlayer.numberOfLoops = -1
-            //Then plays the audio
-            audioPlayer.play()
-        }
+        //Starts the main theme
+        Audio.playMainTheme()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let tree = segue.destination as! treeViewController

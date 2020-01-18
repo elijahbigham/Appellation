@@ -10,12 +10,20 @@ import UIKit
 
 class endScreenController: UIViewController {
     
+    //Allows access to the AudioManager methods
+    let Audio: AudioManager = AudioManager()
+    
     @IBOutlet weak var YouWin: UIImageView!
     @IBOutlet weak var YouLose: UIImageView!
     
     
     public var didWin: Bool = false
     override func viewDidLoad() {
+        //Stops main theme from playing
+        
+        //This causes an EXC_BAD_ACCESS error vvv
+       // Audio.stopMainTheme()
+        
         super.viewDidLoad()
         //sets up end screens
         YouWin.isHidden = true
