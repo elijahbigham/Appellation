@@ -98,6 +98,7 @@ class treeViewController: UIViewController {
         }
         
         //Chooses the answer from array
+        print(chosenCategory.count)
         let rand = Int.random(in: 0 ..< chosenCategory.count)
         answer = chosenCategory[rand]
         print(answer)
@@ -119,7 +120,6 @@ class treeViewController: UIViewController {
         }
         
         //Initializes the label to underscores
-        print(labelText)
         textLabel.text = labelText
     }
     
@@ -130,7 +130,6 @@ class treeViewController: UIViewController {
             //This is for finding if the letter occurs in the string
             let currentLetterIndex = answer.index(answer.startIndex, offsetBy: i)
             let currentLetter = answer[currentLetterIndex]
-            print(currentLetter)
             
             if (pressedLetter == currentLetter){
                 letterInWord = true
@@ -214,7 +213,7 @@ class treeViewController: UIViewController {
             print("2 apples left")
             apple5.isHidden = true
         case 1:
-            print("1 appleßs left")
+            print("1 apple left")
             apple6.isHidden = true
         case 0:
             //THIS IS WHERE YOU LOSE THE GAME
