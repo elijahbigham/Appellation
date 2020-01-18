@@ -10,6 +10,8 @@ import UIKit
 
 class treeViewController: UIViewController {
     
+    let Audio : AudioManager = AudioManager()
+    
     //Categories
     let COMPSCI : [String] = ["VARIABLE", "INTEGER", "DOUBLE", "METHOD", "STACK OVERFLOW", "BOOLEAN", "BUSZA", "INSTANTIATION", "INTERFACE", "SUBCLASS", "CLASS", "SUPERCLASS", "BYTE", "COMPILER", "DATABASE", "LEAP YEAR", "BINARY", "OCTAL", "DECIMAL", "HEXADECIMAL", "ASCII", "FLOAT", "CHAR", "STRING", "DOCUMENTATION", "ERROR", "INDEX", "OUT OF BOUNDS", "PUBLIC", "PRIVATE", "STATIC", "RETURN"]
     let VIDEOGAMES : [String] = ["TENNIS FOR TWO", "UNDERTALE", "THE WITCHER", "ROCKET LEAGUE", "SUPER SMASH BROS", "FLAPPY BIRD", "JETPACK JOYRIDE", "CALL OF DUTY", "BEAT SABER", "GEOMETRY DASH", "APEX LEGENDS", "NINTENDO", "BLIZZARD", "EPIC GAMES", "UBISOFT", "ROCKSTAR GAMES", "CAPCOM", "BANDAI NAMCO", "GAMELOFT", "MARIO", "POKEMON", "THE LEGEND OF ZELDA", "GRAND THEFT AUTO", "RAINBOW SIX SEIGE", "MEGA MAN", "PAC MAN", "ASSASSINS CREED", "OVERWATCH", "ELECTRONIC ARTS", "LUIGI", "WARIO", "WALUIGI", "BOWSER", "SONIC", "SHADOW", "TAILS", "FIRE EMBLEM", "PEACH", "DAISY", "YOSHI"]
@@ -141,9 +143,13 @@ class treeViewController: UIViewController {
             AddLetters(letter: pressedLetter)
             //Resets boolean for the next choice
             letterInWord = false
+            //Then plays sound effect
+            Audio.playRightLetter()
         } else {
             //Make apple dissappear
             LoseApples()
+            //Then plays sound effect
+            Audio.playLoseApple()
         }
         //THIS IS WHERE YOU WIN THE GAME
         //Checks if there are any underscores left in labelText
