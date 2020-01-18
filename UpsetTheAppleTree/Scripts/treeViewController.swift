@@ -57,6 +57,7 @@ class treeViewController: UIViewController {
         
         //THIS NEEDS TO BE HERE
         ChooseAnswer(category: catChoice)
+        print(answer)
     }
     //variable for win or lose
     var didWin = false
