@@ -15,6 +15,7 @@ class AudioManager {
     var mainTheme = AVAudioPlayer()
     var rightLetter = AVAudioPlayer()
     var loseApple = AVAudioPlayer()
+    var youWin = AVAudioPlayer()
     
     public func playMainTheme(){
         //Sets up main theme so it is ready to play
@@ -61,6 +62,20 @@ class AudioManager {
         loseApple.play()
     }
     
+    public func playYouWin(){
+        //Sets up the right letter sound effect so it is ready to play
+        do {
+            youWin = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "YouWinSong", ofType: "wav")!))
+            youWin.prepareToPlay()
+        } catch {
+            print(error)
+        }
+        //Sets volume of sound effect to avoid ear rape
+        youWin.volume = 0.5
+        //Then plays audio once
+        youWin.play()
+    }
+    
     public func stopMainTheme(){
         //stops playing the main theme
         mainTheme.stop()
@@ -72,6 +87,10 @@ class AudioManager {
     
     public func stopLoseApple(){
         loseApple.stop()
+    }
+    
+    public func stopYouWin(){
+        youWin.stop()
     }
     
 }
