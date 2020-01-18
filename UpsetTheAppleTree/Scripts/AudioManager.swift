@@ -42,7 +42,7 @@ class AudioManager {
             print(error)
         }
         //Sets volume of sound effect to avoid ear rape
-        rightLetter.volume = 0.1
+        rightLetter.volume = 0.2
         //Then plays audio once
         rightLetter.play()
     }
@@ -56,7 +56,7 @@ class AudioManager {
             print(error)
         }
         //Sets volume of sound effect to avoid ear rape
-        loseApple.volume = 0.4
+        loseApple.volume = 0.5
         //Then plays audio once
         loseApple.play()
     }
