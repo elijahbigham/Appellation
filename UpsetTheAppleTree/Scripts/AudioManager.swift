@@ -27,6 +27,8 @@ class AudioManager {
         
         //Tells the audioPlayer to loop an infinite number of times
         mainTheme.numberOfLoops = -1
+        //Sets the volume
+        mainTheme.volume = 1
         //Then plays the audio
         mainTheme.play()
     }
