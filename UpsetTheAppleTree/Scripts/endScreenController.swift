@@ -36,6 +36,8 @@ class endScreenController: UIViewController {
         }
         else{
             YouLose.isHidden = false
+            //Plays audio
+            audio.playYouLose()
         }
 
         // Do any additional setup after loading the view.
