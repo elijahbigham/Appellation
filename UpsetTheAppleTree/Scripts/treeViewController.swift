@@ -228,7 +228,7 @@ class treeViewController: UIViewController {
             didWin = false
             Animate(currentApple : apple7, dropDistance : 256)
             //Adds in delay so apple has time to animate
-            DispatchQueue.main.asyncAfter(deadline:.now() + 5.0, execute: {
+            DispatchQueue.main.asyncAfter(deadline:.now() + 0.7, execute: {
                 self.performSegue(withIdentifier: "toEnd", sender: self)
             }
             //performSegue(withIdentifier: "toEnd", sender: self)
@@ -251,7 +251,7 @@ class treeViewController: UIViewController {
             completion: nil
         )
         //Hides apple after certain amount of time
-        DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
+        DispatchQueue.main.asyncAfter(deadline:.now() + 0.9, execute: {
             currentApple.isHidden = true
         })
     }
