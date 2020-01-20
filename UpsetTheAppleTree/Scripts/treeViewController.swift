@@ -13,7 +13,7 @@ class treeViewController: UIViewController {
     var audio : AudioManager!
     
     //Categories
-    let COMPSCI : [String] = ["VARIABLE", "INTEGER", "DOUBLE", "METHOD", "STACK OVERFLOW", "BOOLEAN", "BUSZA", "INSTANTIATION", "INTERFACE", "SUBCLASS", "CLASS", "SUPERCLASS", "BYTE", "COMPILER", "DATABASE", "LEAP YEAR", "BINARY", "OCTAL", "DECIMAL", "HEXADECIMAL", "ASCII", "FLOAT", "CHAR", "STRING", "DOCUMENTATION", "ERROR", "INDEX", "OUT OF BOUNDS", "PUBLIC", "PRIVATE", "STATIC", "RETURN"]
+    let COMPSCI : [String] = ["VARIABLE", "INTEGER", "DOUBLE", "METHOD", "STACK OVERFLOW", "BOOLEAN", "BUSZA", "INSTANTIATION", "INTERFACE", "SUBCLASS", "CLASS", "SUPERCLASS", "BYTE", "COMPILER", "DATABASE", "LEAP YEAR", "BINARY", "OCTAL", "DECIMAL", "HEXADECIMAL", "ASCII", "FLOAT", "CHAR", "STRING", "DOCUMENTATION", "ERROR", "INDEX", "OUT OF BOUNDS", "PUBLIC", "PRIVATE", "STATIC", "RETURN", "HELLO WORLD"]
     let VIDEOGAMES : [String] = ["TENNIS FOR TWO", "UNDERTALE", "THE WITCHER", "ROCKET LEAGUE", "SUPER SMASH BROS", "FLAPPY BIRD", "JETPACK JOYRIDE", "CALL OF DUTY", "BEAT SABER", "GEOMETRY DASH", "APEX LEGENDS", "NINTENDO", "BLIZZARD", "EPIC GAMES", "UBISOFT", "ROCKSTAR GAMES", "CAPCOM", "BANDAI NAMCO", "GAMELOFT", "MARIO", "POKEMON", "THE LEGEND OF ZELDA", "GRAND THEFT AUTO", "RAINBOW SIX SEIGE", "MEGA MAN", "PAC MAN", "ASSASSINS CREED", "OVERWATCH", "ELECTRONIC ARTS", "LUIGI", "WARIO", "WALUIGI", "BOWSER", "SONIC", "SHADOW", "TAILS", "FIRE EMBLEM", "PEACH", "DAISY", "YOSHI"]
     let ELONMUSK : [String] = ["SPACEX", "TESLA", "JACK MA", "MARS", "CYBER TRUCK", "STANFORD", "PAYPAL", "SPACE", "IRON MAN", "REEVE", "SOLARCITY", "OPENAI"]
     let MEMES : [String] = ["FREE REAL ESTATE", "GRAPE SURGERY", "FORTNITE", "FLEX TAPE", "DOODLEBOB", "FIVE GUM", "PEPE THE FROG", "YEET", "DAB", "BOTTOM TEXT", "WWIII", "KEANU REEVES", "SPONGEBOB", "OK BOOMER", "VIBE CHECK", "BABY YODA", "DEEP FRIED", "BEE MOVIE", "BIG BRAIN", "THANOS", "CRINGE", "FLORIDA MAN", "SHREK", "GARFIELD", "REEEEEEEEEEEEEE"]
@@ -44,7 +44,7 @@ class treeViewController: UIViewController {
     //END OF APPLES
     
     //This is the correct answer
-    var answer = "HELLO WORLD"
+    public var answer = "HELLO WORLD"
     
     //If these hit 0 you lose
     var applesLeft = 7
@@ -68,6 +68,7 @@ class treeViewController: UIViewController {
         let endScreen = segue.destination as! endScreenController
         endScreen.didWin = didWin
         endScreen.audio = audio
+        endScreen.answerDisplayText = answer
     }
     
     //Assigns answer variable to a random word from the chosen category
@@ -204,22 +205,16 @@ class treeViewController: UIViewController {
         
         switch applesLeft{
         case 6:
-            print("6 apples left")
             apple1.isHidden = true
         case 5:
-            print("5 apples left")
             apple2.isHidden = true
         case 4:
-            print("4 apples left")
             apple3.isHidden = true
         case 3:
-            print("3 apples left")
             apple4.isHidden = true
         case 2:
-            print("2 apples left")
             apple5.isHidden = true
         case 1:
-            print("1 apple left")
             apple6.isHidden = true
         case 0:
             //THIS IS WHERE YOU LOSE THE GAME

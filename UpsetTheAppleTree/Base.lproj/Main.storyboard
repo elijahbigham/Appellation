@@ -935,14 +935,38 @@
                                     <constraint firstAttribute="width" constant="1407" id="GN3-Vd-Zmu"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh4-sh-4Ip">
+                                <rect key="frame" x="330" y="1149" width="364" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Oyt-Da-bia"/>
+                                    <constraint firstAttribute="width" constant="364" id="vH3-uX-b66"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WoT IS a VarIAbLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALv-z8-Doh">
+                                <rect key="frame" x="167" y="1187" width="690" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="690" id="PXa-64-4k7"/>
+                                    <constraint firstAttribute="height" constant="72" id="zve-Ab-hcM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
+                                <color key="textColor" red="1" green="0.04830961332" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.54068369179999998" green="1" blue="0.3397727827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zN5-Eo-ofm" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="28s-1D-UCq"/>
+                            <constraint firstItem="ALv-z8-Doh" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="IT5-PN-VPZ"/>
+                            <constraint firstItem="Xh4-sh-4Ip" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" constant="491.5" id="KJY-ez-BZV"/>
                             <constraint firstItem="zN5-Eo-ofm" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" id="KMh-n9-pqu"/>
                             <constraint firstItem="gga-M5-5d2" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="LU4-t2-af7"/>
                             <constraint firstItem="6Cf-sA-3Sj" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" id="NvG-qi-FYy"/>
                             <constraint firstItem="gga-M5-5d2" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" id="Quv-2h-9bL"/>
+                            <constraint firstItem="ALv-z8-Doh" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" constant="540" id="Uwb-KL-JAG"/>
+                            <constraint firstItem="Xh4-sh-4Ip" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="lr3-WN-WqJ"/>
                             <constraint firstItem="6Cf-sA-3Sj" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="rWi-0F-EAS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lzk-tn-hII"/>
@@ -950,6 +974,8 @@
                     <connections>
                         <outlet property="YouLose" destination="zN5-Eo-ofm" id="6xq-dC-4su"/>
                         <outlet property="YouWin" destination="gga-M5-5d2" id="0lp-yr-09S"/>
+                        <outlet property="answerDisplay" destination="ALv-z8-Doh" id="gYr-TG-Ly1"/>
+                        <outlet property="introLabel" destination="Xh4-sh-4Ip" id="rvk-7O-DiJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iqo-Ro-hMR" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -10,6 +10,8 @@ import UIKit
 
 class endScreenController: UIViewController {
     
+    let treeView : treeViewController = treeViewController()
+    
     //Allows access to the AudioManager methods
     var audio: AudioManager!
     
@@ -17,16 +19,23 @@ class endScreenController: UIViewController {
     @IBOutlet weak var YouLose: UIImageView!
     
     
+    @IBOutlet weak var introLabel: UILabel!
+    @IBOutlet public weak var answerDisplay: UILabel!
+    
     public var didWin: Bool = false
+    public var answerDisplayText = ""
+    
     override func viewDidLoad() {
         //Stops main theme from playing
         
         audio.stopMainTheme()
         
         super.viewDidLoad()
-        //sets up end screens
+        //sets up end screens and labels
         YouWin.isHidden = true
         YouLose.isHidden = true
+        introLabel.isHidden = true
+        answerDisplay.isHidden = true
         
         //displays the one true label
         if (didWin){
@@ -36,6 +45,11 @@ class endScreenController: UIViewController {
         }
         else{
             YouLose.isHidden = false
+            introLabel.isHidden = false
+            
+            answerDisplay.text = answerDisplayText
+            answerDisplay.isHidden = false
+            
             //Plays audio
             audio.playYouLose()
         }
