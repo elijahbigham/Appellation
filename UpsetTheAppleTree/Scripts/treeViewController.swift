@@ -208,23 +208,17 @@ class treeViewController: UIViewController {
         
         switch applesLeft{
         case 6:
-            Animate(currentApple : apple1, dropDistance : 256)
-            //apple1.isHidden = true
+            Animate(currentApple : apple1, dropDistance : 272)
         case 5:
             Animate(currentApple : apple2, dropDistance : 384)
-            //apple2.isHidden = true
         case 4:
             Animate(currentApple : apple3, dropDistance : 512)
-            //apple3.isHidden = true
         case 3:
             Animate(currentApple : apple4, dropDistance : 512)
-            //apple4.isHidden = true
         case 2:
             Animate(currentApple : apple5, dropDistance : 384)
-            //apple5.isHidden = true
         case 1:
-            Animate(currentApple : apple6, dropDistance : 256)
-            //apple6.isHidden = true
+            Animate(currentApple : apple6, dropDistance : 272)
         case 0:
             //THIS IS WHERE YOU LOSE THE GAME
             print("You Lose!")
