@@ -18,9 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CATEGORY_PICKER_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="VJl-Pc-Sdv">
-                                <rect key="frame" x="-185" y="-362" width="1395" height="2090"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CATEGORY_PICKER_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="VJl-Pc-Sdv">
+                                <rect key="frame" x="-185.5" y="-362" width="1395" height="2090"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2090" id="2LU-Eb-YkX"/>
+                                    <constraint firstAttribute="width" constant="1395" id="TTg-e8-xHm"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6J-sz-MOn">
                                 <rect key="frame" x="56" y="376" width="396" height="191"/>
@@ -234,6 +237,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.54068369179999998" green="1" blue="0.3397727827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="VJl-Pc-Sdv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="17Y-nb-4d8"/>
                             <constraint firstItem="Dqm-UL-ubg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="15" id="1YU-U4-d7g"/>
                             <constraint firstItem="o6J-sz-MOn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-258" id="3X8-Od-Y7x"/>
                             <constraint firstItem="C59-9P-s39" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-211.5" id="8Ap-Nn-ggL"/>
@@ -259,6 +263,7 @@
                             <constraint firstItem="tNB-jo-oyx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="256.5" id="mEM-SB-pcH"/>
                             <constraint firstItem="lQR-kB-b7F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="14.5" id="nDl-Ig-nQq"/>
                             <constraint firstItem="9aP-CE-sN8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="460" id="nOZ-y2-B1r"/>
+                            <constraint firstItem="VJl-Pc-Sdv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o1k-ws-0jN"/>
                             <constraint firstItem="lQR-kB-b7F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="256.5" id="o6X-M0-h9F"/>
                             <constraint firstItem="qbe-aR-wjW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="261.5" id="slP-tE-8RZ"/>
                             <constraint firstItem="KmK-JR-7Vu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="214.5" id="t7c-m6-k5d"/>
@@ -308,6 +313,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="145" id="6fH-IL-Osw"/>
                                     <constraint firstAttribute="width" constant="153" id="ycf-Ag-Zfb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="yoZ-MG-lcF">
+                                <rect key="frame" x="583" y="24.5" width="153" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="513-eK-cj2"/>
+                                    <constraint firstAttribute="width" constant="153" id="Q1z-nH-PRS"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="PcK-fM-76f">
@@ -751,13 +763,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="yoZ-MG-lcF">
-                                <rect key="frame" x="583" y="24.5" width="153" height="145"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="145" id="513-eK-cj2"/>
-                                    <constraint firstAttribute="width" constant="153" id="Q1z-nH-PRS"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.54068369179999998" green="1" blue="0.3397727827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -920,13 +925,6 @@
                                     <constraint firstAttribute="height" constant="1566" id="Bum-xA-jZP"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YOU_WIN.png" translatesAutoresizingMaskIntoConstraints="NO" id="gga-M5-5d2">
-                                <rect key="frame" x="-191.5" y="-100" width="1407" height="1566"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1566" id="07U-XL-wap"/>
-                                    <constraint firstAttribute="width" constant="1407" id="GN3-Vd-Zmu"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh4-sh-4Ip">
                                 <rect key="frame" x="330" y="1149" width="364" height="51"/>
                                 <constraints>
@@ -947,17 +945,24 @@
                                 <color key="textColor" red="1" green="0.04830961332" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ENLARGED_WIN_SCREEN_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gga-M5-5d2">
+                                <rect key="frame" x="-206.5" y="-123" width="1437" height="1589"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1437" id="T7w-7r-GAJ"/>
+                                    <constraint firstAttribute="height" constant="1589" id="ipo-t8-xbn"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.54068369179999998" green="1" blue="0.3397727827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zN5-Eo-ofm" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="28s-1D-UCq"/>
+                            <constraint firstItem="gga-M5-5d2" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" constant="-11.5" id="8Dg-JA-VAx"/>
                             <constraint firstItem="ALv-z8-Doh" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="IT5-PN-VPZ"/>
                             <constraint firstItem="Xh4-sh-4Ip" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" constant="491.5" id="KJY-ez-BZV"/>
                             <constraint firstItem="zN5-Eo-ofm" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" id="KMh-n9-pqu"/>
-                            <constraint firstItem="gga-M5-5d2" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="LU4-t2-af7"/>
                             <constraint firstItem="6Cf-sA-3Sj" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" id="NvG-qi-FYy"/>
-                            <constraint firstItem="gga-M5-5d2" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" id="Quv-2h-9bL"/>
                             <constraint firstItem="ALv-z8-Doh" firstAttribute="centerY" secondItem="CvJ-8D-bfj" secondAttribute="centerY" constant="540" id="Uwb-KL-JAG"/>
+                            <constraint firstItem="gga-M5-5d2" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="Yft-8Z-HHk"/>
                             <constraint firstItem="Xh4-sh-4Ip" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="lr3-WN-WqJ"/>
                             <constraint firstItem="6Cf-sA-3Sj" firstAttribute="centerX" secondItem="CvJ-8D-bfj" secondAttribute="centerX" id="rWi-0F-EAS"/>
                         </constraints>
@@ -978,9 +983,9 @@
     <resources>
         <image name="Apple.png" width="126" height="125"/>
         <image name="CATEGORY_PICKER_3.png" width="600" height="600"/>
+        <image name="ENLARGED_WIN_SCREEN_2.png" width="800" height="800"/>
         <image name="FINAL_BACKGROUND_2.png" width="600" height="600"/>
         <image name="YOU_LOSE.png" width="600" height="600"/>
-        <image name="YOU_WIN.png" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7SY-bX-qUS"/>

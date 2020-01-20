@@ -27,6 +27,7 @@
 		334DFCA623D3B44B00D5E6FE /* YouWinSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334DFCA523D3B44B00D5E6FE /* YouWinSong.wav */; };
 		334DFCA823D3C91600D5E6FE /* YouLoseSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334DFCA723D3C91600D5E6FE /* YouLoseSong.wav */; };
 		334DFCB323D3D34300D5E6FE /* RightLetter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334DFCB223D3D34300D5E6FE /* RightLetter.wav */; };
+		33676C0023D64EFF00962923 /* ENLARGED_WIN_SCREEN_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 33676BFF23D64EFF00962923 /* ENLARGED_WIN_SCREEN_2.png */; };
 		5183793B23CDEE1300720471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5183793A23CDEE1300720471 /* AppDelegate.swift */; };
 		5183793D23CDEE1300720471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5183793C23CDEE1300720471 /* ViewController.swift */; };
 		5183794023CDEE1300720471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5183793E23CDEE1300720471 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		334DFCA523D3B44B00D5E6FE /* YouWinSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = YouWinSong.wav; sourceTree = "<group>"; };
 		334DFCA723D3C91600D5E6FE /* YouLoseSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = YouLoseSong.wav; sourceTree = "<group>"; };
 		334DFCB223D3D34300D5E6FE /* RightLetter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = RightLetter.wav; path = UpsetTheAppleTree/Music/RightLetter.wav; sourceTree = SOURCE_ROOT; };
+		33676BFF23D64EFF00962923 /* ENLARGED_WIN_SCREEN_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ENLARGED_WIN_SCREEN_2.png; path = GameArt/ENLARGED_WIN_SCREEN_2.png; sourceTree = "<group>"; };
 		5183793723CDEE1300720471 /* UpsetTheAppleTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpsetTheAppleTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5183793A23CDEE1300720471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5183793C23CDEE1300720471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				334DFC9423D2522000D5E6FE /* GameArt */,
 				334DFC9A23D254C600D5E6FE /* Music */,
 				5183793E23CDEE1300720471 /* Main.storyboard */,
+				33676BFF23D64EFF00962923 /* ENLARGED_WIN_SCREEN_2.png */,
 				5183794323CDEE2300720471 /* LaunchScreen.storyboard */,
 				5183794123CDEE2300720471 /* Assets.xcassets */,
 				5183794623CDEE2300720471 /* Info.plist */,
@@ -215,6 +218,7 @@
 				334DFCA623D3B44B00D5E6FE /* YouWinSong.wav in Resources */,
 				334DFC8323D0D54F00D5E6FE /* FINAL_BACKGROUND.png in Resources */,
 				5183794523CDEE2300720471 /* LaunchScreen.storyboard in Resources */,
+				33676C0023D64EFF00962923 /* ENLARGED_WIN_SCREEN_2.png in Resources */,
 				334DFC8F23D217DC00D5E6FE /* LOADING_SCREEN.png in Resources */,
 				334DFC8223D0D54F00D5E6FE /* Apple.png in Resources */,
 				334DFC8523D0E74A00D5E6FE /* FINAL_BACKGROUND_2.png in Resources */,
