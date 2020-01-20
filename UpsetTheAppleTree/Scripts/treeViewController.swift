@@ -205,39 +205,52 @@ class treeViewController: UIViewController {
         
         switch applesLeft{
         case 6:
-            apple1.isHidden = true
+            Animate(currentApple : apple1)
+            //apple1.isHidden = true
         case 5:
-            apple2.isHidden = true
+            Animate(currentApple : apple2)
+            //apple2.isHidden = true
         case 4:
-            apple3.isHidden = true
+            Animate(currentApple : apple3)
+            //apple3.isHidden = true
         case 3:
-            apple4.isHidden = true
+            Animate(currentApple : apple4)
+            //apple4.isHidden = true
         case 2:
-            apple5.isHidden = true
+            Animate(currentApple : apple5)
+            //apple5.isHidden = true
         case 1:
-            apple6.isHidden = true
+            Animate(currentApple : apple6)
+            //apple6.isHidden = true
         case 0:
             //THIS IS WHERE YOU LOSE THE GAME
             print("You Lose!")
             didWin = false
-            UIView.animate(
-                withDuration: 1.0,
-                delay: 0.2,
-                options: .curveEaseIn,
-                animations: {
-                    self.apple7.transform = CGAffineTransform(translationX: 0, y: 256)
-            },
-                completion: nil
-            )
-            apple7.isHidden = true
-            DispatchQueue.main.asyncAfter(deadline:.now() + 5.0, execute: {
-                self.performSegue(withIdentifier: "toEnd", sender: self)
-            })
+            Animate(currentApple : apple7)
             //performSegue(withIdentifier: "toEnd", sender: self)
             
         default:
             print("Dems weird apples")
         }
+    }
+    
+    //THIS IS WHAT I ADDED MARCO
+    func Animate(currentApple : UIImageView){
+        //animates the apple falling
+        UIView.animate(
+            withDuration: 1.0,
+            delay: 0.2,
+            options: .curveEaseIn,
+            animations: {
+                currentApple.transform = CGAffineTransform(translationX: 0, y: 256)
+        },
+            completion: nil
+        )
+        //Adds in delay so apple has time to animate
+        DispatchQueue.main.asyncAfter(deadline:.now() + 5.0, execute: {
+            self.performSegue(withIdentifier: "toEnd", sender: self)
+        })
+        //currentApple.isHidden = true
     }
     
     //This checks what button is pressed and acts accordingly
