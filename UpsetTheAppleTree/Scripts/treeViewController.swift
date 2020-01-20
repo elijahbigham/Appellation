@@ -224,9 +224,21 @@ class treeViewController: UIViewController {
         case 0:
             //THIS IS WHERE YOU LOSE THE GAME
             print("You Lose!")
-            apple7.isHidden = true
             didWin = false
-            performSegue(withIdentifier: "toEnd", sender: self)
+            UIView.animate(
+                withDuration: 1.0,
+                delay: 0.2,
+                options: .curveEaseIn,
+                animations: {
+                    self.apple7.transform = CGAffineTransform(translationX: 0, y: 256)
+            },
+                completion: nil
+            )
+            apple7.isHidden = true
+            DispatchQueue.main.asyncAfter(deadline:.now() + 5.0, execute: {
+                self.performSegue(withIdentifier: "toEnd", sender: self)
+            })
+            //performSegue(withIdentifier: "toEnd", sender: self)
             
         default:
             print("Dems weird apples")
