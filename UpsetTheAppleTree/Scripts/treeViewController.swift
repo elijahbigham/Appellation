@@ -53,6 +53,8 @@ class treeViewController: UIViewController {
     var labelText = ""
     var letterInWord = false
     
+    var canClick = true
+    
     //OCCURS WHEN THE VIEW LOADS
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -157,6 +159,7 @@ class treeViewController: UIViewController {
         //Checks if there are any underscores left in labelText
         let charset = CharacterSet(charactersIn: "_")
         if labelText.rangeOfCharacter(from: charset) == nil{
+            canClick = false
             didWin = true
             performSegue(withIdentifier: "toEnd", sender: self)
         }
@@ -225,6 +228,7 @@ class treeViewController: UIViewController {
         case 0:
             //THIS IS WHERE YOU LOSE THE GAME
             print("You Lose!")
+            canClick = false
             didWin = false
             Animate(currentApple : apple7, dropDistance : 256)
             //Adds in delay so apple has time to animate
@@ -258,63 +262,65 @@ class treeViewController: UIViewController {
     
     //This checks what button is pressed and acts accordingly
     @IBAction func buttonPress(sender: UIButton){
-        switch sender.currentTitle{
-        case "A":
-            Update(pressedLetter: "A")
-        case "B":
-            Update(pressedLetter: "B")
-        case "C":
-            Update(pressedLetter: "C")
-        case "D":
-            Update(pressedLetter: "D")
-        case "E":
-            Update(pressedLetter: "E")
-        case "F":
-            Update(pressedLetter: "F")
-        case "G":
-            Update(pressedLetter: "G")
-        case "H":
-            Update(pressedLetter: "H")
-        case "I":
-            Update(pressedLetter: "I")
-        case "J":
-            Update(pressedLetter: "J")
-        case "K":
-            Update(pressedLetter: "K")
-        case "L":
-            Update(pressedLetter: "L")
-        case "M":
-            Update(pressedLetter: "M")
-        case "N":
-            Update(pressedLetter: "N")
-        case "O":
-            Update(pressedLetter: "O")
-        case "P":
-            Update(pressedLetter: "P")
-        case "Q":
-            Update(pressedLetter: "Q")
-        case "R":
-            Update(pressedLetter: "R")
-        case "S":
-            Update(pressedLetter: "S")
-        case "T":
-            Update(pressedLetter: "T")
-        case "U":
-            Update(pressedLetter: "U")
-        case "V":
-            Update(pressedLetter: "V")
-        case "W":
-            Update(pressedLetter: "W")
-        case "X":
-            Update(pressedLetter: "X")
-        case "Y":
-            Update(pressedLetter: "Y")
-        case "Z":
-            Update(pressedLetter: "Z")
-        default:
-            print("Something bad happened")
-        
+        if(canClick && sender.backgroundColor != UIColor.gray){
+            switch sender.currentTitle{
+            case "A":
+                Update(pressedLetter: "A")
+            case "B":
+                Update(pressedLetter: "B")
+            case "C":
+                Update(pressedLetter: "C")
+            case "D":
+                Update(pressedLetter: "D")
+            case "E":
+                Update(pressedLetter: "E")
+            case "F":
+                Update(pressedLetter: "F")
+            case "G":
+                Update(pressedLetter: "G")
+            case "H":
+                Update(pressedLetter: "H")
+            case "I":
+                Update(pressedLetter: "I")
+            case "J":
+                Update(pressedLetter: "J")
+            case "K":
+                Update(pressedLetter: "K")
+            case "L":
+                Update(pressedLetter: "L")
+            case "M":
+                Update(pressedLetter: "M")
+            case "N":
+                Update(pressedLetter: "N")
+            case "O":
+                Update(pressedLetter: "O")
+            case "P":
+                Update(pressedLetter: "P")
+            case "Q":
+                Update(pressedLetter: "Q")
+            case "R":
+                Update(pressedLetter: "R")
+            case "S":
+                Update(pressedLetter: "S")
+            case "T":
+                Update(pressedLetter: "T")
+            case "U":
+                Update(pressedLetter: "U")
+            case "V":
+                Update(pressedLetter: "V")
+            case "W":
+                Update(pressedLetter: "W")
+            case "X":
+                Update(pressedLetter: "X")
+            case "Y":
+                Update(pressedLetter: "Y")
+            case "Z":
+                Update(pressedLetter: "Z")
+            default:
+                print("Something bad happened")
+                
+            }
+            sender.backgroundColor = UIColor.gray
         }
-        sender.backgroundColor = UIColor.gray
     }
 }
