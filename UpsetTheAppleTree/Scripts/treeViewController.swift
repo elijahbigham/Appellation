@@ -227,8 +227,12 @@ class treeViewController: UIViewController {
             print("You Lose!")
             didWin = false
             Animate(currentApple : apple7)
+            //Adds in delay so apple has time to animate
+            DispatchQueue.main.asyncAfter(deadline:.now() + 5.0, execute: {
+                self.performSegue(withIdentifier: "toEnd", sender: self)
+            }
             //performSegue(withIdentifier: "toEnd", sender: self)
-            
+            )
         default:
             print("Dems weird apples")
         }
@@ -246,10 +250,6 @@ class treeViewController: UIViewController {
         },
             completion: nil
         )
-        //Adds in delay so apple has time to animate
-        DispatchQueue.main.asyncAfter(deadline:.now() + 5.0, execute: {
-            self.performSegue(withIdentifier: "toEnd", sender: self)
-        })
         //currentApple.isHidden = true
     }
     
