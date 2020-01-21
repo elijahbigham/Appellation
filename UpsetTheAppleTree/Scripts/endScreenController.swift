@@ -39,11 +39,13 @@ class endScreenController: UIViewController {
         
         //displays the one true label
         if (didWin){
+        self.view.backgroundColor = UIColor.brown
             YouWin.isHidden = false
             //Plays audio
             audio.playYouWin()
         }
         else{
+            self.view.backgroundColor = UIColor.blue
             YouLose.isHidden = false
             introLabel.isHidden = false
             
