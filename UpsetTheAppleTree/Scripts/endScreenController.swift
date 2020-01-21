@@ -15,6 +15,9 @@ class endScreenController: UIViewController {
     //Allows access to the AudioManager methods
     var audio: AudioManager!
     
+    let blueColor : UInt = 0x8ecbf9
+    let brownColor : UInt = 0x7a5e42
+    
     @IBOutlet weak var YouWin: UIImageView!
     @IBOutlet weak var YouLose: UIImageView!
     
@@ -39,13 +42,13 @@ class endScreenController: UIViewController {
         
         //displays the one true label
         if (didWin){
-        self.view.backgroundColor = UIColor.brown
+            view.backgroundColor = UIColorFromRGB(rgbValue: brownColor)
             YouWin.isHidden = false
             //Plays audio
             audio.playYouWin()
         }
         else{
-            self.view.backgroundColor = UIColor.blue
+            view.backgroundColor = UIColorFromRGB(rgbValue: blueColor)
             YouLose.isHidden = false
             introLabel.isHidden = false
             
@@ -59,7 +62,15 @@ class endScreenController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    //Takes hex number and makes rgb color from it
+    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
     /*
     // MARK: - Navigation
 
