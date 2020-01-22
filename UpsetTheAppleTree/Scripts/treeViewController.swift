@@ -257,63 +257,7 @@ class treeViewController: UIViewController {
     //This checks what button is pressed and acts accordingly
     @IBAction func buttonPress(sender: UIButton){
         if(canClick && sender.backgroundColor != UIColor.gray){
-            switch sender.currentTitle{
-            case "A":
-                Update(pressedLetter: "A")
-            case "B":
-                Update(pressedLetter: "B")
-            case "C":
-                Update(pressedLetter: "C")
-            case "D":
-                Update(pressedLetter: "D")
-            case "E":
-                Update(pressedLetter: "E")
-            case "F":
-                Update(pressedLetter: "F")
-            case "G":
-                Update(pressedLetter: "G")
-            case "H":
-                Update(pressedLetter: "H")
-            case "I":
-                Update(pressedLetter: "I")
-            case "J":
-                Update(pressedLetter: "J")
-            case "K":
-                Update(pressedLetter: "K")
-            case "L":
-                Update(pressedLetter: "L")
-            case "M":
-                Update(pressedLetter: "M")
-            case "N":
-                Update(pressedLetter: "N")
-            case "O":
-                Update(pressedLetter: "O")
-            case "P":
-                Update(pressedLetter: "P")
-            case "Q":
-                Update(pressedLetter: "Q")
-            case "R":
-                Update(pressedLetter: "R")
-            case "S":
-                Update(pressedLetter: "S")
-            case "T":
-                Update(pressedLetter: "T")
-            case "U":
-                Update(pressedLetter: "U")
-            case "V":
-                Update(pressedLetter: "V")
-            case "W":
-                Update(pressedLetter: "W")
-            case "X":
-                Update(pressedLetter: "X")
-            case "Y":
-                Update(pressedLetter: "Y")
-            case "Z":
-                Update(pressedLetter: "Z")
-            default:
-                print("Something bad happened")
-                
-            }
+            Update(pressedLetter: sender.currentTitle)
             sender.backgroundColor = UIColor.gray
         }
     }
