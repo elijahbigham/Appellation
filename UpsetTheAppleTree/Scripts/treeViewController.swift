@@ -197,8 +197,6 @@ class treeViewController: UIViewController {
                 labelText = newLabelText
                 //And then sets the text to the UI_Label to labelText
                 textLabel.text = labelText
-                
-                //HOLY SHIT IT ACTUALLY WORKS!!!!!
             }
         }
     }
