@@ -235,8 +235,7 @@ class treeViewController: UIViewController {
             print("Dems weird apples")
         }
     }
-    
-    //THIS IS WHAT I ADDED MARCO
+
     func Animate(currentApple : UIImageView, dropDistance : CGFloat){
         //animates the apple falling
         UIView.animate(
