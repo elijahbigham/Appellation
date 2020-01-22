@@ -44,6 +44,7 @@ class endScreenController: UIViewController {
         if (didWin){
             view.backgroundColor = UIColorFromRGB(rgbValue: brownColor)
             YouWin.isHidden = false
+            ViewController.numWins += 1
             //Plays audio
             audio.playYouWin()
         }
@@ -51,6 +52,7 @@ class endScreenController: UIViewController {
             view.backgroundColor = UIColorFromRGB(rgbValue: blueColor)
             YouLose.isHidden = false
             introLabel.isHidden = false
+            ViewController.numLosses += 1
             
             answerDisplay.text = answerDisplayText
             answerDisplay.isHidden = false

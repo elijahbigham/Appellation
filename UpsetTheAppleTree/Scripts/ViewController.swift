@@ -18,13 +18,25 @@ class ViewController: UIViewController{
     
     @IBOutlet weak var chooseACategory: UILabel!
     
+    @IBOutlet weak var winsLabel: UILabel!
+    @IBOutlet weak var losesLabel: UILabel!
+    //keeps track of wins and loses
+    static var numWins = 0
+    static var numLosses = 0
+    
     var choice = -1
     //CS = 0, VG = 1, EM = 2, M = 3, S = 4, TTH = 5, P = 6
+    
+    struct requirement{
+        var deleteme: Int;
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //Starts the main theme
         audio.playMainTheme()
+        winsLabel.text = String(ViewController.numWins)
+        losesLabel.text = String(ViewController.numLosses)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let tree = segue.destination as! treeViewController

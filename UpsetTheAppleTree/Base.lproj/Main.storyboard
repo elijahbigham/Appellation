@@ -672,6 +672,46 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wins:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="3yH-dH-2CE">
+                                <rect key="frame" x="323" y="830" width="191" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="qTU-3N-7EE"/>
+                                    <constraint firstAttribute="height" constant="50" id="tBE-pQ-mJE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="lVv-H8-Cnh">
+                                <rect key="frame" x="323" y="876" width="191" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="arN-vg-J8w"/>
+                                    <constraint firstAttribute="width" constant="191" id="wlB-jk-00t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.04830961332" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loses:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="Vy5-PM-3Xw">
+                                <rect key="frame" x="849" y="830" width="191" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="KKA-Qo-txj"/>
+                                    <constraint firstAttribute="height" constant="50" id="f1t-A4-6Mf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="tYp-VN-Ez3">
+                                <rect key="frame" x="849" y="876" width="191" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="f45-af-hvX"/>
+                                    <constraint firstAttribute="height" constant="50" id="s3T-JG-Kel"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.04830961332" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.50581479072570801" green="0.8322339653968811" blue="0.97943514585494995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -680,6 +720,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="21"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="51"/>
                             </constraint>
+                            <constraint firstItem="lVv-H8-Cnh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-264.5" id="27h-Gg-pEx"/>
                             <constraint firstItem="OOC-Ih-ORq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-192.5" id="2eX-iK-7oL">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-120.5"/>
                             </constraint>
@@ -740,6 +781,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="21"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="53"/>
                             </constraint>
+                            <constraint firstItem="3yH-dH-2CE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="343" id="Gd9-yw-9Tt"/>
                             <constraint firstItem="JGK-JP-hif" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-228.5" id="HjJ-sb-gXz">
                                 <variation key="heightClass=compact-widthClass=regular" constant="-71.5"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="-75"/>
@@ -763,9 +805,11 @@
                             <constraint firstItem="lQR-kB-b7F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="14.5" id="NpW-5C-RkZ">
                                 <variation key="heightClass=regular-widthClass=regular" constant="36.5"/>
                             </constraint>
+                            <constraint firstItem="tYp-VN-Ez3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="389" id="QQN-2X-eYP"/>
                             <constraint firstItem="kya-s6-Xn5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-258.5" id="QtY-oh-wDi">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-202.5"/>
                             </constraint>
+                            <constraint firstItem="Vy5-PM-3Xw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="261.5" id="RLs-k1-BFH"/>
                             <constraint firstItem="VJl-Pc-Sdv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="27.5" id="Sh3-E7-VxU">
                                 <variation key="heightClass=compact-widthClass=regular" constant="11.5"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="18.5"/>
@@ -801,6 +845,7 @@
                             <constraint firstItem="9aP-CE-sN8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="458" id="YiE-sL-7zr">
                                 <variation key="heightClass=regular-widthClass=regular" constant="391"/>
                             </constraint>
+                            <constraint firstItem="Vy5-PM-3Xw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="343" id="ZtK-6T-d7Y"/>
                             <constraint firstItem="cjF-Pp-Tgl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="257.5" id="b2p-yR-Qig">
                                 <variation key="heightClass=compact-widthClass=regular" constant="74"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="98"/>
@@ -824,6 +869,7 @@
                             <constraint firstItem="yDI-6e-dhH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="236.5" id="g8z-wP-UZq">
                                 <variation key="heightClass=regular-widthClass=regular" constant="214"/>
                             </constraint>
+                            <constraint firstItem="3yH-dH-2CE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-264.5" id="h3e-qB-UEs"/>
                             <constraint firstItem="TMv-Cm-c2q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-257.5" id="hxY-eH-twZ">
                                 <variation key="heightClass=compact-widthClass=regular" constant="-89"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="-99.5"/>
@@ -853,6 +899,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="99"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="204.5"/>
                             </constraint>
+                            <constraint firstItem="tYp-VN-Ez3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="261.5" id="mal-6t-am9"/>
                             <constraint firstItem="mNg-2b-W54" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-257.5" id="n6a-hR-CCB">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-205"/>
                             </constraint>
@@ -892,6 +939,7 @@
                             <constraint firstItem="tNB-jo-oyx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="256.5" id="sd8-0I-aQn">
                                 <variation key="heightClass=regular-widthClass=regular" constant="233.5"/>
                             </constraint>
+                            <constraint firstItem="lVv-H8-Cnh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="389" id="sdR-7x-gJe"/>
                             <constraint firstItem="qbe-aR-wjW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="261.5" id="slP-tE-8RZ">
                                 <variation key="heightClass=compact-widthClass=regular" constant="74"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="98"/>
@@ -953,20 +1001,20 @@
                                 <exclude reference="UdA-1Z-zUP"/>
                                 <exclude reference="EDG-1c-0Gr"/>
                                 <exclude reference="n6a-hR-CCB"/>
-                                <exclude reference="Xg0-RH-Giu"/>
-                                <exclude reference="qbX-Xc-zDn"/>
                                 <exclude reference="j9b-pn-joE"/>
                                 <exclude reference="vmz-Xt-b6y"/>
+                                <exclude reference="Xg0-RH-Giu"/>
+                                <exclude reference="qbX-Xc-zDn"/>
                                 <exclude reference="3CH-tG-o5L"/>
                                 <exclude reference="6Pl-RU-Kpm"/>
                                 <exclude reference="8hK-Nd-WDD"/>
                                 <exclude reference="e3r-rT-eNV"/>
                                 <exclude reference="LYB-b2-KAq"/>
                                 <exclude reference="NpW-5C-RkZ"/>
-                                <exclude reference="XhK-rl-yuu"/>
-                                <exclude reference="g8z-wP-UZq"/>
                                 <exclude reference="YiE-sL-7zr"/>
                                 <exclude reference="o2Y-4f-x0K"/>
+                                <exclude reference="XhK-rl-yuu"/>
+                                <exclude reference="g8z-wP-UZq"/>
                                 <exclude reference="i6c-Vu-emR"/>
                                 <exclude reference="wAN-mI-ooB"/>
                                 <exclude reference="ILI-x9-FQZ"/>
@@ -1001,14 +1049,14 @@
                                 <exclude reference="bUv-1V-EFN"/>
                                 <include reference="n6a-hR-CCB"/>
                                 <exclude reference="yIQ-Wm-79M"/>
-                                <exclude reference="EYy-gp-cft"/>
-                                <include reference="Xg0-RH-Giu"/>
-                                <exclude reference="b2p-yR-Qig"/>
-                                <include reference="qbX-Xc-zDn"/>
                                 <exclude reference="hxY-eH-twZ"/>
                                 <include reference="j9b-pn-joE"/>
                                 <exclude reference="v5c-ad-PKn"/>
                                 <include reference="vmz-Xt-b6y"/>
+                                <exclude reference="EYy-gp-cft"/>
+                                <include reference="Xg0-RH-Giu"/>
+                                <exclude reference="b2p-yR-Qig"/>
+                                <include reference="qbX-Xc-zDn"/>
                                 <include reference="3CH-tG-o5L"/>
                                 <include reference="6Pl-RU-Kpm"/>
                                 <exclude reference="8Ap-Nn-ggL"/>
@@ -1021,14 +1069,14 @@
                                 <include reference="NpW-5C-RkZ"/>
                                 <exclude reference="nDl-Ig-nQq"/>
                                 <exclude reference="o6X-M0-h9F"/>
-                                <exclude reference="Ahc-KP-h4x"/>
-                                <include reference="XhK-rl-yuu"/>
-                                <include reference="g8z-wP-UZq"/>
-                                <exclude reference="jFe-Ln-Zrv"/>
                                 <exclude reference="A18-8L-9jj"/>
                                 <include reference="YiE-sL-7zr"/>
                                 <exclude reference="nOZ-y2-B1r"/>
                                 <include reference="o2Y-4f-x0K"/>
+                                <exclude reference="Ahc-KP-h4x"/>
+                                <include reference="XhK-rl-yuu"/>
+                                <include reference="g8z-wP-UZq"/>
+                                <exclude reference="jFe-Ln-Zrv"/>
                                 <exclude reference="AEC-ga-db5"/>
                                 <include reference="i6c-Vu-emR"/>
                                 <exclude reference="t7c-m6-k5d"/>
@@ -1044,10 +1092,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="losesLabel" destination="tYp-VN-Ez3" id="zC1-ox-3uc"/>
+                        <outlet property="winsLabel" destination="lVv-H8-Cnh" id="33Z-gd-PRM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="272" y="-90"/>
+            <point key="canvasLocation" x="271.8887262079063" y="-90.234375"/>
         </scene>
         <!--Tree View Controller-->
         <scene sceneID="pZq-T2-MBJ">
