@@ -257,7 +257,7 @@ class treeViewController: UIViewController {
     //This checks what button is pressed and acts accordingly
     @IBAction func buttonPress(sender: UIButton){
         if(canClick && sender.backgroundColor != UIColor.gray){
-            Update(pressedLetter: sender.currentTitle)
+            Update(pressedLetter: Array(sender.currentTitle ?? "A")[0])
             sender.backgroundColor = UIColor.gray
         }
     }
