@@ -63,7 +63,7 @@
 		33676BFF23D64EFF00962923 /* ENLARGED_WIN_SCREEN_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ENLARGED_WIN_SCREEN_2.png; sourceTree = "<group>"; };
 		33676C3B23D7B19D00962923 /* FINAL_BACKGROUND_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FINAL_BACKGROUND_3.png; sourceTree = "<group>"; };
 		33676C3C23D7B19E00962923 /* CATEGORY_PICKER_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CATEGORY_PICKER_4.png; sourceTree = "<group>"; };
-		5183793723CDEE1300720471 /* Appelation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appelation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5183793723CDEE1300720471 /* Appellation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appellation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5183793A23CDEE1300720471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5183793C23CDEE1300720471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5183793F23CDEE1300720471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		5183793823CDEE1300720471 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5183793723CDEE1300720471 /* Appelation.app */,
+				5183793723CDEE1300720471 /* Appellation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 			);
 			name = UpsetTheAppleTree;
 			productName = UpsetTheAppleTree;
-			productReference = 5183793723CDEE1300720471 /* Appelation.app */;
+			productReference = 5183793723CDEE1300720471 /* Appellation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -414,7 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GreenHam.UpsetTheAppleTree;
-				PRODUCT_NAME = Appelation;
+				PRODUCT_NAME = Appellation;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -432,7 +432,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GreenHam.UpsetTheAppleTree;
-				PRODUCT_NAME = Appelation;
+				PRODUCT_NAME = Appellation;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
